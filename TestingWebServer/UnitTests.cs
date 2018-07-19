@@ -12,7 +12,7 @@ namespace TestingWebServer
         string token;
 
         [Test]
-        public void PositiveTest()
+        public void TstPlannedBehaviour()
         {
 
             //Login as admin
