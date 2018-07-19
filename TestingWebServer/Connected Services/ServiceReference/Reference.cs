@@ -23,20 +23,6 @@ namespace TestingWebServer.ServiceReference {
         System.Threading.Tasks.Task<TestingWebServer.ServiceReference.setCoolDownTimeResponse> setCoolDownTimeAsync(TestingWebServer.ServiceReference.setCoolDownTime request);
         
         // CODEGEN: Generating message contract since element name arg0 from namespace  is not marked nillable
-        [System.ServiceModel.OperationContractAttribute(Action="urn:SetTokenLifeTime", ReplyAction="*")]
-        TestingWebServer.ServiceReference.setTokenLifeTimeResponse setTokenLifeTime(TestingWebServer.ServiceReference.setTokenLifeTime request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="urn:SetTokenLifeTime", ReplyAction="*")]
-        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.setTokenLifeTimeResponse> setTokenLifeTimeAsync(TestingWebServer.ServiceReference.setTokenLifeTime request);
-        
-        // CODEGEN: Generating message contract since element name arg0 from namespace  is not marked nillable
-        [System.ServiceModel.OperationContractAttribute(Action="urn:GetAllUsers", ReplyAction="*")]
-        TestingWebServer.ServiceReference.getAllUsersResponse getAllUsers(TestingWebServer.ServiceReference.getAllUsers request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="urn:GetAllUsers", ReplyAction="*")]
-        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getAllUsersResponse> getAllUsersAsync(TestingWebServer.ServiceReference.getAllUsers request);
-        
-        // CODEGEN: Generating message contract since element name arg0 from namespace  is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="urn:GetAllItems", ReplyAction="*")]
         TestingWebServer.ServiceReference.getAllItemsResponse getAllItems(TestingWebServer.ServiceReference.getAllItems request);
         
@@ -52,18 +38,39 @@ namespace TestingWebServer.ServiceReference {
         System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getTokenLifeTimeResponse> getTokenLifeTimeAsync(TestingWebServer.ServiceReference.getTokenLifeTime request);
         
         // CODEGEN: Generating message contract since element name arg0 from namespace  is not marked nillable
-        [System.ServiceModel.OperationContractAttribute(Action="urn:UpdateItem", ReplyAction="*")]
-        TestingWebServer.ServiceReference.updateItemResponse updateItem(TestingWebServer.ServiceReference.updateItem request);
+        [System.ServiceModel.OperationContractAttribute(Action="urn:GetUserItem", ReplyAction="*")]
+        TestingWebServer.ServiceReference.getUserItemResponse getUserItem(TestingWebServer.ServiceReference.getUserItem request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="urn:UpdateItem", ReplyAction="*")]
-        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.updateItemResponse> updateItemAsync(TestingWebServer.ServiceReference.updateItem request);
+        [System.ServiceModel.OperationContractAttribute(Action="urn:GetUserItem", ReplyAction="*")]
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getUserItemResponse> getUserItemAsync(TestingWebServer.ServiceReference.getUserItem request);
         
         // CODEGEN: Generating message contract since element name arg0 from namespace  is not marked nillable
-        [System.ServiceModel.OperationContractAttribute(Action="urn:ChangePassword", ReplyAction="*")]
-        TestingWebServer.ServiceReference.changePasswordResponse changePassword(TestingWebServer.ServiceReference.changePassword request);
+        [System.ServiceModel.OperationContractAttribute(Action="urn:GetUserItems", ReplyAction="*")]
+        TestingWebServer.ServiceReference.getUserItemsResponse getUserItems(TestingWebServer.ServiceReference.getUserItems request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="urn:ChangePassword", ReplyAction="*")]
-        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.changePasswordResponse> changePasswordAsync(TestingWebServer.ServiceReference.changePassword request);
+        [System.ServiceModel.OperationContractAttribute(Action="urn:GetUserItems", ReplyAction="*")]
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getUserItemsResponse> getUserItemsAsync(TestingWebServer.ServiceReference.getUserItems request);
+        
+        // CODEGEN: Generating message contract since element name arg0 from namespace  is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="urn:GetAliveTockens", ReplyAction="*")]
+        TestingWebServer.ServiceReference.getAliveTockensResponse getAliveTockens(TestingWebServer.ServiceReference.getAliveTockens request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:GetAliveTockens", ReplyAction="*")]
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getAliveTockensResponse> getAliveTockensAsync(TestingWebServer.ServiceReference.getAliveTockens request);
+        
+        // CODEGEN: Generating message contract since element name arg0 from namespace  is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="urn:GetItem", ReplyAction="*")]
+        TestingWebServer.ServiceReference.getItemResponse getItem(TestingWebServer.ServiceReference.getItem request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:GetItem", ReplyAction="*")]
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getItemResponse> getItemAsync(TestingWebServer.ServiceReference.getItem request);
+        
+        // CODEGEN: Generating message contract since element name arg0 from namespace  is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="urn:UnlockAllUsers", ReplyAction="*")]
+        TestingWebServer.ServiceReference.unlockAllUsersResponse unlockAllUsers(TestingWebServer.ServiceReference.unlockAllUsers request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:UnlockAllUsers", ReplyAction="*")]
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.unlockAllUsersResponse> unlockAllUsersAsync(TestingWebServer.ServiceReference.unlockAllUsers request);
         
         // CODEGEN: Generating message contract since element name arg0 from namespace  is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="urn:Login", ReplyAction="*")]
@@ -80,18 +87,18 @@ namespace TestingWebServer.ServiceReference {
         System.Threading.Tasks.Task<TestingWebServer.ServiceReference.logoutResponse> logoutAsync(TestingWebServer.ServiceReference.logout request);
         
         // CODEGEN: Generating message contract since element name arg0 from namespace  is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="urn:GetLockedAdmins", ReplyAction="*")]
+        TestingWebServer.ServiceReference.getLockedAdminsResponse getLockedAdmins(TestingWebServer.ServiceReference.getLockedAdmins request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:GetLockedAdmins", ReplyAction="*")]
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getLockedAdminsResponse> getLockedAdminsAsync(TestingWebServer.ServiceReference.getLockedAdmins request);
+        
+        // CODEGEN: Generating message contract since element name arg0 from namespace  is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="urn:AddItem", ReplyAction="*")]
         TestingWebServer.ServiceReference.addItemResponse addItem(TestingWebServer.ServiceReference.addItem request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:AddItem", ReplyAction="*")]
         System.Threading.Tasks.Task<TestingWebServer.ServiceReference.addItemResponse> addItemAsync(TestingWebServer.ServiceReference.addItem request);
-        
-        // CODEGEN: Generating message contract since element name arg0 from namespace  is not marked nillable
-        [System.ServiceModel.OperationContractAttribute(Action="urn:DeleteItem", ReplyAction="*")]
-        TestingWebServer.ServiceReference.deleteItemResponse deleteItem(TestingWebServer.ServiceReference.deleteItem request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="urn:DeleteItem", ReplyAction="*")]
-        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.deleteItemResponse> deleteItemAsync(TestingWebServer.ServiceReference.deleteItem request);
         
         // CODEGEN: Generating message contract since element name arg0 from namespace  is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="urn:RemoveUser", ReplyAction="*")]
@@ -101,11 +108,11 @@ namespace TestingWebServer.ServiceReference {
         System.Threading.Tasks.Task<TestingWebServer.ServiceReference.removeUserResponse> removeUserAsync(TestingWebServer.ServiceReference.removeUser request);
         
         // CODEGEN: Generating message contract since element name arg0 from namespace  is not marked nillable
-        [System.ServiceModel.OperationContractAttribute(Action="urn:CreateUser", ReplyAction="*")]
-        TestingWebServer.ServiceReference.createUserResponse createUser(TestingWebServer.ServiceReference.createUser request);
+        [System.ServiceModel.OperationContractAttribute(Action="urn:GetAllAdmins", ReplyAction="*")]
+        TestingWebServer.ServiceReference.getAllAdminsResponse getAllAdmins(TestingWebServer.ServiceReference.getAllAdmins request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="urn:CreateUser", ReplyAction="*")]
-        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.createUserResponse> createUserAsync(TestingWebServer.ServiceReference.createUser request);
+        [System.ServiceModel.OperationContractAttribute(Action="urn:GetAllAdmins", ReplyAction="*")]
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getAllAdminsResponse> getAllAdminsAsync(TestingWebServer.ServiceReference.getAllAdmins request);
         
         // CODEGEN: Generating message contract since element name arg0 from namespace  is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="urn:LockUser", ReplyAction="*")]
@@ -130,11 +137,89 @@ namespace TestingWebServer.ServiceReference {
         System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getCoolDownTimeResponse> getCoolDownTimeAsync(TestingWebServer.ServiceReference.getCoolDownTime request);
         
         // CODEGEN: Generating message contract since element name arg0 from namespace  is not marked nillable
-        [System.ServiceModel.OperationContractAttribute(Action="urn:UnlockUsers", ReplyAction="*")]
-        TestingWebServer.ServiceReference.unlockUsersResponse unlockUsers(TestingWebServer.ServiceReference.unlockUsers request);
+        [System.ServiceModel.OperationContractAttribute(Action="urn:GetLoginedUsers", ReplyAction="*")]
+        TestingWebServer.ServiceReference.getLoginedUsersResponse getLoginedUsers(TestingWebServer.ServiceReference.getLoginedUsers request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="urn:UnlockUsers", ReplyAction="*")]
-        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.unlockUsersResponse> unlockUsersAsync(TestingWebServer.ServiceReference.unlockUsers request);
+        [System.ServiceModel.OperationContractAttribute(Action="urn:GetLoginedUsers", ReplyAction="*")]
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getLoginedUsersResponse> getLoginedUsersAsync(TestingWebServer.ServiceReference.getLoginedUsers request);
+        
+        // CODEGEN: Generating message contract since element name arg0 from namespace  is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="urn:GetAllItemsIndexes", ReplyAction="*")]
+        TestingWebServer.ServiceReference.getAllItemsIndexesResponse getAllItemsIndexes(TestingWebServer.ServiceReference.getAllItemsIndexes request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:GetAllItemsIndexes", ReplyAction="*")]
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getAllItemsIndexesResponse> getAllItemsIndexesAsync(TestingWebServer.ServiceReference.getAllItemsIndexes request);
+        
+        // CODEGEN: Generating message contract since element name arg0 from namespace  is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="urn:SetTokenLifeTime", ReplyAction="*")]
+        TestingWebServer.ServiceReference.setTokenLifeTimeResponse setTokenLifeTime(TestingWebServer.ServiceReference.setTokenLifeTime request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:SetTokenLifeTime", ReplyAction="*")]
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.setTokenLifeTimeResponse> setTokenLifeTimeAsync(TestingWebServer.ServiceReference.setTokenLifeTime request);
+        
+        // CODEGEN: Generating message contract since element name arg0 from namespace  is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="urn:GetAllUsers", ReplyAction="*")]
+        TestingWebServer.ServiceReference.getAllUsersResponse getAllUsers(TestingWebServer.ServiceReference.getAllUsers request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:GetAllUsers", ReplyAction="*")]
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getAllUsersResponse> getAllUsersAsync(TestingWebServer.ServiceReference.getAllUsers request);
+        
+        // CODEGEN: Generating message contract since element name arg0 from namespace  is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="urn:GetLoginedAdmins", ReplyAction="*")]
+        TestingWebServer.ServiceReference.getLoginedAdminsResponse getLoginedAdmins(TestingWebServer.ServiceReference.getLoginedAdmins request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:GetLoginedAdmins", ReplyAction="*")]
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getLoginedAdminsResponse> getLoginedAdminsAsync(TestingWebServer.ServiceReference.getLoginedAdmins request);
+        
+        // CODEGEN: Generating message contract since element name arg0 from namespace  is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="urn:UpdateItem", ReplyAction="*")]
+        TestingWebServer.ServiceReference.updateItemResponse updateItem(TestingWebServer.ServiceReference.updateItem request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:UpdateItem", ReplyAction="*")]
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.updateItemResponse> updateItemAsync(TestingWebServer.ServiceReference.updateItem request);
+        
+        // CODEGEN: Generating message contract since element name arg0 from namespace  is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="urn:UnlockUser", ReplyAction="*")]
+        TestingWebServer.ServiceReference.unlockUserResponse unlockUser(TestingWebServer.ServiceReference.unlockUser request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:UnlockUser", ReplyAction="*")]
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.unlockUserResponse> unlockUserAsync(TestingWebServer.ServiceReference.unlockUser request);
+        
+        // CODEGEN: Generating message contract since element name arg0 from namespace  is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="urn:ChangePassword", ReplyAction="*")]
+        TestingWebServer.ServiceReference.changePasswordResponse changePassword(TestingWebServer.ServiceReference.changePassword request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:ChangePassword", ReplyAction="*")]
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.changePasswordResponse> changePasswordAsync(TestingWebServer.ServiceReference.changePassword request);
+        
+        // CODEGEN: Generating message contract since element name arg0 from namespace  is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="urn:DeleteItem", ReplyAction="*")]
+        TestingWebServer.ServiceReference.deleteItemResponse deleteItem(TestingWebServer.ServiceReference.deleteItem request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:DeleteItem", ReplyAction="*")]
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.deleteItemResponse> deleteItemAsync(TestingWebServer.ServiceReference.deleteItem request);
+        
+        // CODEGEN: Generating message contract since element name arg0 from namespace  is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="urn:GetLockedUsers", ReplyAction="*")]
+        TestingWebServer.ServiceReference.getLockedUsersResponse getLockedUsers(TestingWebServer.ServiceReference.getLockedUsers request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:GetLockedUsers", ReplyAction="*")]
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getLockedUsersResponse> getLockedUsersAsync(TestingWebServer.ServiceReference.getLockedUsers request);
+        
+        // CODEGEN: Generating message contract since element name arg0 from namespace  is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="urn:CreateUser", ReplyAction="*")]
+        TestingWebServer.ServiceReference.createUserResponse createUser(TestingWebServer.ServiceReference.createUser request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:CreateUser", ReplyAction="*")]
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.createUserResponse> createUserAsync(TestingWebServer.ServiceReference.createUser request);
+        
+        // CODEGEN: Generating message contract since message part namespace () does not match the default value (http://edu.softserve.com/)
+        [System.ServiceModel.OperationContractAttribute(Action="urn:ResetServiceToInitialState", ReplyAction="*")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        TestingWebServer.ServiceReference.resetServiceToInitialStateResponse resetServiceToInitialState(TestingWebServer.ServiceReference.resetServiceToInitialState request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:ResetServiceToInitialState", ReplyAction="*")]
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.resetServiceToInitialStateResponse> resetServiceToInitialStateAsync(TestingWebServer.ServiceReference.resetServiceToInitialState request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -205,146 +290,6 @@ namespace TestingWebServer.ServiceReference {
         }
         
         public setCoolDownTimeResponseBody(bool @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class setTokenLifeTime {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="setTokenLifeTime", Namespace="http://edu.softserve.com/", Order=0)]
-        public TestingWebServer.ServiceReference.setTokenLifeTimeBody Body;
-        
-        public setTokenLifeTime() {
-        }
-        
-        public setTokenLifeTime(TestingWebServer.ServiceReference.setTokenLifeTimeBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
-    public partial class setTokenLifeTimeBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public string arg0;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
-        public long arg1;
-        
-        public setTokenLifeTimeBody() {
-        }
-        
-        public setTokenLifeTimeBody(string arg0, long arg1) {
-            this.arg0 = arg0;
-            this.arg1 = arg1;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class setTokenLifeTimeResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="setTokenLifeTimeResponse", Namespace="http://edu.softserve.com/", Order=0)]
-        public TestingWebServer.ServiceReference.setTokenLifeTimeResponseBody Body;
-        
-        public setTokenLifeTimeResponse() {
-        }
-        
-        public setTokenLifeTimeResponse(TestingWebServer.ServiceReference.setTokenLifeTimeResponseBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
-    public partial class setTokenLifeTimeResponseBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
-        public bool @return;
-        
-        public setTokenLifeTimeResponseBody() {
-        }
-        
-        public setTokenLifeTimeResponseBody(bool @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class getAllUsers {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="getAllUsers", Namespace="http://edu.softserve.com/", Order=0)]
-        public TestingWebServer.ServiceReference.getAllUsersBody Body;
-        
-        public getAllUsers() {
-        }
-        
-        public getAllUsers(TestingWebServer.ServiceReference.getAllUsersBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
-    public partial class getAllUsersBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public string arg0;
-        
-        public getAllUsersBody() {
-        }
-        
-        public getAllUsersBody(string arg0) {
-            this.arg0 = arg0;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class getAllUsersResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="getAllUsersResponse", Namespace="http://edu.softserve.com/", Order=0)]
-        public TestingWebServer.ServiceReference.getAllUsersResponseBody Body;
-        
-        public getAllUsersResponse() {
-        }
-        
-        public getAllUsersResponse(TestingWebServer.ServiceReference.getAllUsersResponseBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
-    public partial class getAllUsersResponseBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public string @return;
-        
-        public getAllUsersResponseBody() {
-        }
-        
-        public getAllUsersResponseBody(string @return) {
             this.@return = @return;
         }
     }
@@ -448,15 +393,15 @@ namespace TestingWebServer.ServiceReference {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class updateItem {
+    public partial class getUserItem {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="updateItem", Namespace="http://edu.softserve.com/", Order=0)]
-        public TestingWebServer.ServiceReference.updateItemBody Body;
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getUserItem", Namespace="http://edu.softserve.com/", Order=0)]
+        public TestingWebServer.ServiceReference.getUserItemBody Body;
         
-        public updateItem() {
+        public getUserItem() {
         }
         
-        public updateItem(TestingWebServer.ServiceReference.updateItemBody Body) {
+        public getUserItem(TestingWebServer.ServiceReference.getUserItemBody Body) {
             this.Body = Body;
         }
     }
@@ -465,21 +410,21 @@ namespace TestingWebServer.ServiceReference {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
-    public partial class updateItemBody {
+    public partial class getUserItemBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
         public string arg0;
         
-        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
-        public int arg1;
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string arg1;
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public string arg2;
+        [System.Runtime.Serialization.DataMemberAttribute(Order=2)]
+        public int arg2;
         
-        public updateItemBody() {
+        public getUserItemBody() {
         }
         
-        public updateItemBody(string arg0, int arg1, string arg2) {
+        public getUserItemBody(string arg0, string arg1, int arg2) {
             this.arg0 = arg0;
             this.arg1 = arg1;
             this.arg2 = arg2;
@@ -490,15 +435,15 @@ namespace TestingWebServer.ServiceReference {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class updateItemResponse {
+    public partial class getUserItemResponse {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="updateItemResponse", Namespace="http://edu.softserve.com/", Order=0)]
-        public TestingWebServer.ServiceReference.updateItemResponseBody Body;
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getUserItemResponse", Namespace="http://edu.softserve.com/", Order=0)]
+        public TestingWebServer.ServiceReference.getUserItemResponseBody Body;
         
-        public updateItemResponse() {
+        public getUserItemResponse() {
         }
         
-        public updateItemResponse(TestingWebServer.ServiceReference.updateItemResponseBody Body) {
+        public getUserItemResponse(TestingWebServer.ServiceReference.getUserItemResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -507,15 +452,15 @@ namespace TestingWebServer.ServiceReference {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
-    public partial class updateItemResponseBody {
+    public partial class getUserItemResponseBody {
         
-        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
-        public bool @return;
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string @return;
         
-        public updateItemResponseBody() {
+        public getUserItemResponseBody() {
         }
         
-        public updateItemResponseBody(bool @return) {
+        public getUserItemResponseBody(string @return) {
             this.@return = @return;
         }
     }
@@ -524,15 +469,15 @@ namespace TestingWebServer.ServiceReference {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class changePassword {
+    public partial class getUserItems {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="changePassword", Namespace="http://edu.softserve.com/", Order=0)]
-        public TestingWebServer.ServiceReference.changePasswordBody Body;
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getUserItems", Namespace="http://edu.softserve.com/", Order=0)]
+        public TestingWebServer.ServiceReference.getUserItemsBody Body;
         
-        public changePassword() {
+        public getUserItems() {
         }
         
-        public changePassword(TestingWebServer.ServiceReference.changePasswordBody Body) {
+        public getUserItems(TestingWebServer.ServiceReference.getUserItemsBody Body) {
             this.Body = Body;
         }
     }
@@ -541,7 +486,7 @@ namespace TestingWebServer.ServiceReference {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
-    public partial class changePasswordBody {
+    public partial class getUserItemsBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
         public string arg0;
@@ -549,16 +494,12 @@ namespace TestingWebServer.ServiceReference {
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
         public string arg1;
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public string arg2;
-        
-        public changePasswordBody() {
+        public getUserItemsBody() {
         }
         
-        public changePasswordBody(string arg0, string arg1, string arg2) {
+        public getUserItemsBody(string arg0, string arg1) {
             this.arg0 = arg0;
             this.arg1 = arg1;
-            this.arg2 = arg2;
         }
     }
     
@@ -566,15 +507,15 @@ namespace TestingWebServer.ServiceReference {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class changePasswordResponse {
+    public partial class getUserItemsResponse {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="changePasswordResponse", Namespace="http://edu.softserve.com/", Order=0)]
-        public TestingWebServer.ServiceReference.changePasswordResponseBody Body;
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getUserItemsResponse", Namespace="http://edu.softserve.com/", Order=0)]
+        public TestingWebServer.ServiceReference.getUserItemsResponseBody Body;
         
-        public changePasswordResponse() {
+        public getUserItemsResponse() {
         }
         
-        public changePasswordResponse(TestingWebServer.ServiceReference.changePasswordResponseBody Body) {
+        public getUserItemsResponse(TestingWebServer.ServiceReference.getUserItemsResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -583,15 +524,223 @@ namespace TestingWebServer.ServiceReference {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
-    public partial class changePasswordResponseBody {
+    public partial class getUserItemsResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string @return;
+        
+        public getUserItemsResponseBody() {
+        }
+        
+        public getUserItemsResponseBody(string @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getAliveTockens {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getAliveTockens", Namespace="http://edu.softserve.com/", Order=0)]
+        public TestingWebServer.ServiceReference.getAliveTockensBody Body;
+        
+        public getAliveTockens() {
+        }
+        
+        public getAliveTockens(TestingWebServer.ServiceReference.getAliveTockensBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
+    public partial class getAliveTockensBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string arg0;
+        
+        public getAliveTockensBody() {
+        }
+        
+        public getAliveTockensBody(string arg0) {
+            this.arg0 = arg0;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getAliveTockensResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getAliveTockensResponse", Namespace="http://edu.softserve.com/", Order=0)]
+        public TestingWebServer.ServiceReference.getAliveTockensResponseBody Body;
+        
+        public getAliveTockensResponse() {
+        }
+        
+        public getAliveTockensResponse(TestingWebServer.ServiceReference.getAliveTockensResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
+    public partial class getAliveTockensResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string @return;
+        
+        public getAliveTockensResponseBody() {
+        }
+        
+        public getAliveTockensResponseBody(string @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getItem {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getItem", Namespace="http://edu.softserve.com/", Order=0)]
+        public TestingWebServer.ServiceReference.getItemBody Body;
+        
+        public getItem() {
+        }
+        
+        public getItem(TestingWebServer.ServiceReference.getItemBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
+    public partial class getItemBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string arg0;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
+        public int arg1;
+        
+        public getItemBody() {
+        }
+        
+        public getItemBody(string arg0, int arg1) {
+            this.arg0 = arg0;
+            this.arg1 = arg1;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getItemResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getItemResponse", Namespace="http://edu.softserve.com/", Order=0)]
+        public TestingWebServer.ServiceReference.getItemResponseBody Body;
+        
+        public getItemResponse() {
+        }
+        
+        public getItemResponse(TestingWebServer.ServiceReference.getItemResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
+    public partial class getItemResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string @return;
+        
+        public getItemResponseBody() {
+        }
+        
+        public getItemResponseBody(string @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class unlockAllUsers {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="unlockAllUsers", Namespace="http://edu.softserve.com/", Order=0)]
+        public TestingWebServer.ServiceReference.unlockAllUsersBody Body;
+        
+        public unlockAllUsers() {
+        }
+        
+        public unlockAllUsers(TestingWebServer.ServiceReference.unlockAllUsersBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
+    public partial class unlockAllUsersBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string arg0;
+        
+        public unlockAllUsersBody() {
+        }
+        
+        public unlockAllUsersBody(string arg0) {
+            this.arg0 = arg0;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class unlockAllUsersResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="unlockAllUsersResponse", Namespace="http://edu.softserve.com/", Order=0)]
+        public TestingWebServer.ServiceReference.unlockAllUsersResponseBody Body;
+        
+        public unlockAllUsersResponse() {
+        }
+        
+        public unlockAllUsersResponse(TestingWebServer.ServiceReference.unlockAllUsersResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
+    public partial class unlockAllUsersResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
         public bool @return;
         
-        public changePasswordResponseBody() {
+        public unlockAllUsersResponseBody() {
         }
         
-        public changePasswordResponseBody(bool @return) {
+        public unlockAllUsersResponseBody(bool @return) {
             this.@return = @return;
         }
     }
@@ -744,6 +893,74 @@ namespace TestingWebServer.ServiceReference {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getLockedAdmins {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getLockedAdmins", Namespace="http://edu.softserve.com/", Order=0)]
+        public TestingWebServer.ServiceReference.getLockedAdminsBody Body;
+        
+        public getLockedAdmins() {
+        }
+        
+        public getLockedAdmins(TestingWebServer.ServiceReference.getLockedAdminsBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
+    public partial class getLockedAdminsBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string arg0;
+        
+        public getLockedAdminsBody() {
+        }
+        
+        public getLockedAdminsBody(string arg0) {
+            this.arg0 = arg0;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getLockedAdminsResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getLockedAdminsResponse", Namespace="http://edu.softserve.com/", Order=0)]
+        public TestingWebServer.ServiceReference.getLockedAdminsResponseBody Body;
+        
+        public getLockedAdminsResponse() {
+        }
+        
+        public getLockedAdminsResponse(TestingWebServer.ServiceReference.getLockedAdminsResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
+    public partial class getLockedAdminsResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string @return;
+        
+        public getLockedAdminsResponseBody() {
+        }
+        
+        public getLockedAdminsResponseBody(string @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class addItem {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="addItem", Namespace="http://edu.softserve.com/", Order=0)]
@@ -769,12 +986,16 @@ namespace TestingWebServer.ServiceReference {
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
         public string arg1;
         
+        [System.Runtime.Serialization.DataMemberAttribute(Order=2)]
+        public int arg2;
+        
         public addItemBody() {
         }
         
-        public addItemBody(string arg0, string arg1) {
+        public addItemBody(string arg0, string arg1, int arg2) {
             this.arg0 = arg0;
             this.arg1 = arg1;
+            this.arg2 = arg2;
         }
     }
     
@@ -808,78 +1029,6 @@ namespace TestingWebServer.ServiceReference {
         }
         
         public addItemResponseBody(bool @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class deleteItem {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="deleteItem", Namespace="http://edu.softserve.com/", Order=0)]
-        public TestingWebServer.ServiceReference.deleteItemBody Body;
-        
-        public deleteItem() {
-        }
-        
-        public deleteItem(TestingWebServer.ServiceReference.deleteItemBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
-    public partial class deleteItemBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public string arg0;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
-        public int arg1;
-        
-        public deleteItemBody() {
-        }
-        
-        public deleteItemBody(string arg0, int arg1) {
-            this.arg0 = arg0;
-            this.arg1 = arg1;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class deleteItemResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="deleteItemResponse", Namespace="http://edu.softserve.com/", Order=0)]
-        public TestingWebServer.ServiceReference.deleteItemResponseBody Body;
-        
-        public deleteItemResponse() {
-        }
-        
-        public deleteItemResponse(TestingWebServer.ServiceReference.deleteItemResponseBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
-    public partial class deleteItemResponseBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
-        public bool @return;
-        
-        public deleteItemResponseBody() {
-        }
-        
-        public deleteItemResponseBody(bool @return) {
             this.@return = @return;
         }
     }
@@ -960,15 +1109,15 @@ namespace TestingWebServer.ServiceReference {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class createUser {
+    public partial class getAllAdmins {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="createUser", Namespace="http://edu.softserve.com/", Order=0)]
-        public TestingWebServer.ServiceReference.createUserBody Body;
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getAllAdmins", Namespace="http://edu.softserve.com/", Order=0)]
+        public TestingWebServer.ServiceReference.getAllAdminsBody Body;
         
-        public createUser() {
+        public getAllAdmins() {
         }
         
-        public createUser(TestingWebServer.ServiceReference.createUserBody Body) {
+        public getAllAdmins(TestingWebServer.ServiceReference.getAllAdminsBody Body) {
             this.Body = Body;
         }
     }
@@ -977,28 +1126,16 @@ namespace TestingWebServer.ServiceReference {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
-    public partial class createUserBody {
+    public partial class getAllAdminsBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
         public string arg0;
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public string arg1;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public string arg2;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=3)]
-        public bool arg3;
-        
-        public createUserBody() {
+        public getAllAdminsBody() {
         }
         
-        public createUserBody(string arg0, string arg1, string arg2, bool arg3) {
+        public getAllAdminsBody(string arg0) {
             this.arg0 = arg0;
-            this.arg1 = arg1;
-            this.arg2 = arg2;
-            this.arg3 = arg3;
         }
     }
     
@@ -1006,15 +1143,15 @@ namespace TestingWebServer.ServiceReference {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class createUserResponse {
+    public partial class getAllAdminsResponse {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="createUserResponse", Namespace="http://edu.softserve.com/", Order=0)]
-        public TestingWebServer.ServiceReference.createUserResponseBody Body;
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getAllAdminsResponse", Namespace="http://edu.softserve.com/", Order=0)]
+        public TestingWebServer.ServiceReference.getAllAdminsResponseBody Body;
         
-        public createUserResponse() {
+        public getAllAdminsResponse() {
         }
         
-        public createUserResponse(TestingWebServer.ServiceReference.createUserResponseBody Body) {
+        public getAllAdminsResponse(TestingWebServer.ServiceReference.getAllAdminsResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -1023,15 +1160,15 @@ namespace TestingWebServer.ServiceReference {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
-    public partial class createUserResponseBody {
+    public partial class getAllAdminsResponseBody {
         
-        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
-        public bool @return;
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string @return;
         
-        public createUserResponseBody() {
+        public getAllAdminsResponseBody() {
         }
         
-        public createUserResponseBody(bool @return) {
+        public getAllAdminsResponseBody(string @return) {
             this.@return = @return;
         }
     }
@@ -1207,15 +1344,15 @@ namespace TestingWebServer.ServiceReference {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class unlockUsers {
+    public partial class getLoginedUsers {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="unlockUsers", Namespace="http://edu.softserve.com/", Order=0)]
-        public TestingWebServer.ServiceReference.unlockUsersBody Body;
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getLoginedUsers", Namespace="http://edu.softserve.com/", Order=0)]
+        public TestingWebServer.ServiceReference.getLoginedUsersBody Body;
         
-        public unlockUsers() {
+        public getLoginedUsers() {
         }
         
-        public unlockUsers(TestingWebServer.ServiceReference.unlockUsersBody Body) {
+        public getLoginedUsers(TestingWebServer.ServiceReference.getLoginedUsersBody Body) {
             this.Body = Body;
         }
     }
@@ -1224,15 +1361,15 @@ namespace TestingWebServer.ServiceReference {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
-    public partial class unlockUsersBody {
+    public partial class getLoginedUsersBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
         public string arg0;
         
-        public unlockUsersBody() {
+        public getLoginedUsersBody() {
         }
         
-        public unlockUsersBody(string arg0) {
+        public getLoginedUsersBody(string arg0) {
             this.arg0 = arg0;
         }
     }
@@ -1241,15 +1378,15 @@ namespace TestingWebServer.ServiceReference {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class unlockUsersResponse {
+    public partial class getLoginedUsersResponse {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="unlockUsersResponse", Namespace="http://edu.softserve.com/", Order=0)]
-        public TestingWebServer.ServiceReference.unlockUsersResponseBody Body;
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getLoginedUsersResponse", Namespace="http://edu.softserve.com/", Order=0)]
+        public TestingWebServer.ServiceReference.getLoginedUsersResponseBody Body;
         
-        public unlockUsersResponse() {
+        public getLoginedUsersResponse() {
         }
         
-        public unlockUsersResponse(TestingWebServer.ServiceReference.unlockUsersResponseBody Body) {
+        public getLoginedUsersResponse(TestingWebServer.ServiceReference.getLoginedUsersResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -1258,15 +1395,762 @@ namespace TestingWebServer.ServiceReference {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
-    public partial class unlockUsersResponseBody {
+    public partial class getLoginedUsersResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string @return;
+        
+        public getLoginedUsersResponseBody() {
+        }
+        
+        public getLoginedUsersResponseBody(string @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getAllItemsIndexes {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getAllItemsIndexes", Namespace="http://edu.softserve.com/", Order=0)]
+        public TestingWebServer.ServiceReference.getAllItemsIndexesBody Body;
+        
+        public getAllItemsIndexes() {
+        }
+        
+        public getAllItemsIndexes(TestingWebServer.ServiceReference.getAllItemsIndexesBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
+    public partial class getAllItemsIndexesBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string arg0;
+        
+        public getAllItemsIndexesBody() {
+        }
+        
+        public getAllItemsIndexesBody(string arg0) {
+            this.arg0 = arg0;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getAllItemsIndexesResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getAllItemsIndexesResponse", Namespace="http://edu.softserve.com/", Order=0)]
+        public TestingWebServer.ServiceReference.getAllItemsIndexesResponseBody Body;
+        
+        public getAllItemsIndexesResponse() {
+        }
+        
+        public getAllItemsIndexesResponse(TestingWebServer.ServiceReference.getAllItemsIndexesResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
+    public partial class getAllItemsIndexesResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string @return;
+        
+        public getAllItemsIndexesResponseBody() {
+        }
+        
+        public getAllItemsIndexesResponseBody(string @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class setTokenLifeTime {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="setTokenLifeTime", Namespace="http://edu.softserve.com/", Order=0)]
+        public TestingWebServer.ServiceReference.setTokenLifeTimeBody Body;
+        
+        public setTokenLifeTime() {
+        }
+        
+        public setTokenLifeTime(TestingWebServer.ServiceReference.setTokenLifeTimeBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
+    public partial class setTokenLifeTimeBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string arg0;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
+        public long arg1;
+        
+        public setTokenLifeTimeBody() {
+        }
+        
+        public setTokenLifeTimeBody(string arg0, long arg1) {
+            this.arg0 = arg0;
+            this.arg1 = arg1;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class setTokenLifeTimeResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="setTokenLifeTimeResponse", Namespace="http://edu.softserve.com/", Order=0)]
+        public TestingWebServer.ServiceReference.setTokenLifeTimeResponseBody Body;
+        
+        public setTokenLifeTimeResponse() {
+        }
+        
+        public setTokenLifeTimeResponse(TestingWebServer.ServiceReference.setTokenLifeTimeResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
+    public partial class setTokenLifeTimeResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
         public bool @return;
         
-        public unlockUsersResponseBody() {
+        public setTokenLifeTimeResponseBody() {
         }
         
-        public unlockUsersResponseBody(bool @return) {
+        public setTokenLifeTimeResponseBody(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getAllUsers {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getAllUsers", Namespace="http://edu.softserve.com/", Order=0)]
+        public TestingWebServer.ServiceReference.getAllUsersBody Body;
+        
+        public getAllUsers() {
+        }
+        
+        public getAllUsers(TestingWebServer.ServiceReference.getAllUsersBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
+    public partial class getAllUsersBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string arg0;
+        
+        public getAllUsersBody() {
+        }
+        
+        public getAllUsersBody(string arg0) {
+            this.arg0 = arg0;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getAllUsersResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getAllUsersResponse", Namespace="http://edu.softserve.com/", Order=0)]
+        public TestingWebServer.ServiceReference.getAllUsersResponseBody Body;
+        
+        public getAllUsersResponse() {
+        }
+        
+        public getAllUsersResponse(TestingWebServer.ServiceReference.getAllUsersResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
+    public partial class getAllUsersResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string @return;
+        
+        public getAllUsersResponseBody() {
+        }
+        
+        public getAllUsersResponseBody(string @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getLoginedAdmins {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getLoginedAdmins", Namespace="http://edu.softserve.com/", Order=0)]
+        public TestingWebServer.ServiceReference.getLoginedAdminsBody Body;
+        
+        public getLoginedAdmins() {
+        }
+        
+        public getLoginedAdmins(TestingWebServer.ServiceReference.getLoginedAdminsBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
+    public partial class getLoginedAdminsBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string arg0;
+        
+        public getLoginedAdminsBody() {
+        }
+        
+        public getLoginedAdminsBody(string arg0) {
+            this.arg0 = arg0;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getLoginedAdminsResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getLoginedAdminsResponse", Namespace="http://edu.softserve.com/", Order=0)]
+        public TestingWebServer.ServiceReference.getLoginedAdminsResponseBody Body;
+        
+        public getLoginedAdminsResponse() {
+        }
+        
+        public getLoginedAdminsResponse(TestingWebServer.ServiceReference.getLoginedAdminsResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
+    public partial class getLoginedAdminsResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string @return;
+        
+        public getLoginedAdminsResponseBody() {
+        }
+        
+        public getLoginedAdminsResponseBody(string @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class updateItem {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="updateItem", Namespace="http://edu.softserve.com/", Order=0)]
+        public TestingWebServer.ServiceReference.updateItemBody Body;
+        
+        public updateItem() {
+        }
+        
+        public updateItem(TestingWebServer.ServiceReference.updateItemBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
+    public partial class updateItemBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string arg0;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
+        public int arg1;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string arg2;
+        
+        public updateItemBody() {
+        }
+        
+        public updateItemBody(string arg0, int arg1, string arg2) {
+            this.arg0 = arg0;
+            this.arg1 = arg1;
+            this.arg2 = arg2;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class updateItemResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="updateItemResponse", Namespace="http://edu.softserve.com/", Order=0)]
+        public TestingWebServer.ServiceReference.updateItemResponseBody Body;
+        
+        public updateItemResponse() {
+        }
+        
+        public updateItemResponse(TestingWebServer.ServiceReference.updateItemResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
+    public partial class updateItemResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool @return;
+        
+        public updateItemResponseBody() {
+        }
+        
+        public updateItemResponseBody(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class unlockUser {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="unlockUser", Namespace="http://edu.softserve.com/", Order=0)]
+        public TestingWebServer.ServiceReference.unlockUserBody Body;
+        
+        public unlockUser() {
+        }
+        
+        public unlockUser(TestingWebServer.ServiceReference.unlockUserBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
+    public partial class unlockUserBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string arg0;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string arg1;
+        
+        public unlockUserBody() {
+        }
+        
+        public unlockUserBody(string arg0, string arg1) {
+            this.arg0 = arg0;
+            this.arg1 = arg1;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class unlockUserResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="unlockUserResponse", Namespace="http://edu.softserve.com/", Order=0)]
+        public TestingWebServer.ServiceReference.unlockUserResponseBody Body;
+        
+        public unlockUserResponse() {
+        }
+        
+        public unlockUserResponse(TestingWebServer.ServiceReference.unlockUserResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
+    public partial class unlockUserResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool @return;
+        
+        public unlockUserResponseBody() {
+        }
+        
+        public unlockUserResponseBody(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class changePassword {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="changePassword", Namespace="http://edu.softserve.com/", Order=0)]
+        public TestingWebServer.ServiceReference.changePasswordBody Body;
+        
+        public changePassword() {
+        }
+        
+        public changePassword(TestingWebServer.ServiceReference.changePasswordBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
+    public partial class changePasswordBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string arg0;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string arg1;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string arg2;
+        
+        public changePasswordBody() {
+        }
+        
+        public changePasswordBody(string arg0, string arg1, string arg2) {
+            this.arg0 = arg0;
+            this.arg1 = arg1;
+            this.arg2 = arg2;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class changePasswordResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="changePasswordResponse", Namespace="http://edu.softserve.com/", Order=0)]
+        public TestingWebServer.ServiceReference.changePasswordResponseBody Body;
+        
+        public changePasswordResponse() {
+        }
+        
+        public changePasswordResponse(TestingWebServer.ServiceReference.changePasswordResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
+    public partial class changePasswordResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool @return;
+        
+        public changePasswordResponseBody() {
+        }
+        
+        public changePasswordResponseBody(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class deleteItem {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="deleteItem", Namespace="http://edu.softserve.com/", Order=0)]
+        public TestingWebServer.ServiceReference.deleteItemBody Body;
+        
+        public deleteItem() {
+        }
+        
+        public deleteItem(TestingWebServer.ServiceReference.deleteItemBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
+    public partial class deleteItemBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string arg0;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
+        public int arg1;
+        
+        public deleteItemBody() {
+        }
+        
+        public deleteItemBody(string arg0, int arg1) {
+            this.arg0 = arg0;
+            this.arg1 = arg1;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class deleteItemResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="deleteItemResponse", Namespace="http://edu.softserve.com/", Order=0)]
+        public TestingWebServer.ServiceReference.deleteItemResponseBody Body;
+        
+        public deleteItemResponse() {
+        }
+        
+        public deleteItemResponse(TestingWebServer.ServiceReference.deleteItemResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
+    public partial class deleteItemResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool @return;
+        
+        public deleteItemResponseBody() {
+        }
+        
+        public deleteItemResponseBody(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getLockedUsers {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getLockedUsers", Namespace="http://edu.softserve.com/", Order=0)]
+        public TestingWebServer.ServiceReference.getLockedUsersBody Body;
+        
+        public getLockedUsers() {
+        }
+        
+        public getLockedUsers(TestingWebServer.ServiceReference.getLockedUsersBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
+    public partial class getLockedUsersBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string arg0;
+        
+        public getLockedUsersBody() {
+        }
+        
+        public getLockedUsersBody(string arg0) {
+            this.arg0 = arg0;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getLockedUsersResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getLockedUsersResponse", Namespace="http://edu.softserve.com/", Order=0)]
+        public TestingWebServer.ServiceReference.getLockedUsersResponseBody Body;
+        
+        public getLockedUsersResponse() {
+        }
+        
+        public getLockedUsersResponse(TestingWebServer.ServiceReference.getLockedUsersResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
+    public partial class getLockedUsersResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string @return;
+        
+        public getLockedUsersResponseBody() {
+        }
+        
+        public getLockedUsersResponseBody(string @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class createUser {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="createUser", Namespace="http://edu.softserve.com/", Order=0)]
+        public TestingWebServer.ServiceReference.createUserBody Body;
+        
+        public createUser() {
+        }
+        
+        public createUser(TestingWebServer.ServiceReference.createUserBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
+    public partial class createUserBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string arg0;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string arg1;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string arg2;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=3)]
+        public bool arg3;
+        
+        public createUserBody() {
+        }
+        
+        public createUserBody(string arg0, string arg1, string arg2, bool arg3) {
+            this.arg0 = arg0;
+            this.arg1 = arg1;
+            this.arg2 = arg2;
+            this.arg3 = arg3;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class createUserResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="createUserResponse", Namespace="http://edu.softserve.com/", Order=0)]
+        public TestingWebServer.ServiceReference.createUserResponseBody Body;
+        
+        public createUserResponse() {
+        }
+        
+        public createUserResponse(TestingWebServer.ServiceReference.createUserResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
+    public partial class createUserResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool @return;
+        
+        public createUserResponseBody() {
+        }
+        
+        public createUserResponseBody(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="resetServiceToInitialState", WrapperNamespace="http://edu.softserve.com/", IsWrapped=true)]
+    public partial class resetServiceToInitialState {
+        
+        public resetServiceToInitialState() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="resetServiceToInitialStateResponse", WrapperNamespace="http://edu.softserve.com/", IsWrapped=true)]
+    public partial class resetServiceToInitialStateResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
+        public bool @return;
+        
+        public resetServiceToInitialStateResponse() {
+        }
+        
+        public resetServiceToInitialStateResponse(bool @return) {
             this.@return = @return;
         }
     }
@@ -1326,58 +2210,6 @@ namespace TestingWebServer.ServiceReference {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        TestingWebServer.ServiceReference.setTokenLifeTimeResponse TestingWebServer.ServiceReference.ICommon.setTokenLifeTime(TestingWebServer.ServiceReference.setTokenLifeTime request) {
-            return base.Channel.setTokenLifeTime(request);
-        }
-        
-        public bool setTokenLifeTime(string arg0, long arg1) {
-            TestingWebServer.ServiceReference.setTokenLifeTime inValue = new TestingWebServer.ServiceReference.setTokenLifeTime();
-            inValue.Body = new TestingWebServer.ServiceReference.setTokenLifeTimeBody();
-            inValue.Body.arg0 = arg0;
-            inValue.Body.arg1 = arg1;
-            TestingWebServer.ServiceReference.setTokenLifeTimeResponse retVal = ((TestingWebServer.ServiceReference.ICommon)(this)).setTokenLifeTime(inValue);
-            return retVal.Body.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.setTokenLifeTimeResponse> TestingWebServer.ServiceReference.ICommon.setTokenLifeTimeAsync(TestingWebServer.ServiceReference.setTokenLifeTime request) {
-            return base.Channel.setTokenLifeTimeAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<TestingWebServer.ServiceReference.setTokenLifeTimeResponse> setTokenLifeTimeAsync(string arg0, long arg1) {
-            TestingWebServer.ServiceReference.setTokenLifeTime inValue = new TestingWebServer.ServiceReference.setTokenLifeTime();
-            inValue.Body = new TestingWebServer.ServiceReference.setTokenLifeTimeBody();
-            inValue.Body.arg0 = arg0;
-            inValue.Body.arg1 = arg1;
-            return ((TestingWebServer.ServiceReference.ICommon)(this)).setTokenLifeTimeAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        TestingWebServer.ServiceReference.getAllUsersResponse TestingWebServer.ServiceReference.ICommon.getAllUsers(TestingWebServer.ServiceReference.getAllUsers request) {
-            return base.Channel.getAllUsers(request);
-        }
-        
-        public string getAllUsers(string arg0) {
-            TestingWebServer.ServiceReference.getAllUsers inValue = new TestingWebServer.ServiceReference.getAllUsers();
-            inValue.Body = new TestingWebServer.ServiceReference.getAllUsersBody();
-            inValue.Body.arg0 = arg0;
-            TestingWebServer.ServiceReference.getAllUsersResponse retVal = ((TestingWebServer.ServiceReference.ICommon)(this)).getAllUsers(inValue);
-            return retVal.Body.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getAllUsersResponse> TestingWebServer.ServiceReference.ICommon.getAllUsersAsync(TestingWebServer.ServiceReference.getAllUsers request) {
-            return base.Channel.getAllUsersAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getAllUsersResponse> getAllUsersAsync(string arg0) {
-            TestingWebServer.ServiceReference.getAllUsers inValue = new TestingWebServer.ServiceReference.getAllUsers();
-            inValue.Body = new TestingWebServer.ServiceReference.getAllUsersBody();
-            inValue.Body.arg0 = arg0;
-            return ((TestingWebServer.ServiceReference.ICommon)(this)).getAllUsersAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         TestingWebServer.ServiceReference.getAllItemsResponse TestingWebServer.ServiceReference.ICommon.getAllItems(TestingWebServer.ServiceReference.getAllItems request) {
             return base.Channel.getAllItems(request);
         }
@@ -1424,61 +2256,136 @@ namespace TestingWebServer.ServiceReference {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        TestingWebServer.ServiceReference.updateItemResponse TestingWebServer.ServiceReference.ICommon.updateItem(TestingWebServer.ServiceReference.updateItem request) {
-            return base.Channel.updateItem(request);
+        TestingWebServer.ServiceReference.getUserItemResponse TestingWebServer.ServiceReference.ICommon.getUserItem(TestingWebServer.ServiceReference.getUserItem request) {
+            return base.Channel.getUserItem(request);
         }
         
-        public bool updateItem(string arg0, int arg1, string arg2) {
-            TestingWebServer.ServiceReference.updateItem inValue = new TestingWebServer.ServiceReference.updateItem();
-            inValue.Body = new TestingWebServer.ServiceReference.updateItemBody();
+        public string getUserItem(string arg0, string arg1, int arg2) {
+            TestingWebServer.ServiceReference.getUserItem inValue = new TestingWebServer.ServiceReference.getUserItem();
+            inValue.Body = new TestingWebServer.ServiceReference.getUserItemBody();
             inValue.Body.arg0 = arg0;
             inValue.Body.arg1 = arg1;
             inValue.Body.arg2 = arg2;
-            TestingWebServer.ServiceReference.updateItemResponse retVal = ((TestingWebServer.ServiceReference.ICommon)(this)).updateItem(inValue);
+            TestingWebServer.ServiceReference.getUserItemResponse retVal = ((TestingWebServer.ServiceReference.ICommon)(this)).getUserItem(inValue);
             return retVal.Body.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.updateItemResponse> TestingWebServer.ServiceReference.ICommon.updateItemAsync(TestingWebServer.ServiceReference.updateItem request) {
-            return base.Channel.updateItemAsync(request);
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getUserItemResponse> TestingWebServer.ServiceReference.ICommon.getUserItemAsync(TestingWebServer.ServiceReference.getUserItem request) {
+            return base.Channel.getUserItemAsync(request);
         }
         
-        public System.Threading.Tasks.Task<TestingWebServer.ServiceReference.updateItemResponse> updateItemAsync(string arg0, int arg1, string arg2) {
-            TestingWebServer.ServiceReference.updateItem inValue = new TestingWebServer.ServiceReference.updateItem();
-            inValue.Body = new TestingWebServer.ServiceReference.updateItemBody();
+        public System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getUserItemResponse> getUserItemAsync(string arg0, string arg1, int arg2) {
+            TestingWebServer.ServiceReference.getUserItem inValue = new TestingWebServer.ServiceReference.getUserItem();
+            inValue.Body = new TestingWebServer.ServiceReference.getUserItemBody();
             inValue.Body.arg0 = arg0;
             inValue.Body.arg1 = arg1;
             inValue.Body.arg2 = arg2;
-            return ((TestingWebServer.ServiceReference.ICommon)(this)).updateItemAsync(inValue);
+            return ((TestingWebServer.ServiceReference.ICommon)(this)).getUserItemAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        TestingWebServer.ServiceReference.changePasswordResponse TestingWebServer.ServiceReference.ICommon.changePassword(TestingWebServer.ServiceReference.changePassword request) {
-            return base.Channel.changePassword(request);
+        TestingWebServer.ServiceReference.getUserItemsResponse TestingWebServer.ServiceReference.ICommon.getUserItems(TestingWebServer.ServiceReference.getUserItems request) {
+            return base.Channel.getUserItems(request);
         }
         
-        public bool changePassword(string arg0, string arg1, string arg2) {
-            TestingWebServer.ServiceReference.changePassword inValue = new TestingWebServer.ServiceReference.changePassword();
-            inValue.Body = new TestingWebServer.ServiceReference.changePasswordBody();
+        public string getUserItems(string arg0, string arg1) {
+            TestingWebServer.ServiceReference.getUserItems inValue = new TestingWebServer.ServiceReference.getUserItems();
+            inValue.Body = new TestingWebServer.ServiceReference.getUserItemsBody();
             inValue.Body.arg0 = arg0;
             inValue.Body.arg1 = arg1;
-            inValue.Body.arg2 = arg2;
-            TestingWebServer.ServiceReference.changePasswordResponse retVal = ((TestingWebServer.ServiceReference.ICommon)(this)).changePassword(inValue);
+            TestingWebServer.ServiceReference.getUserItemsResponse retVal = ((TestingWebServer.ServiceReference.ICommon)(this)).getUserItems(inValue);
             return retVal.Body.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.changePasswordResponse> TestingWebServer.ServiceReference.ICommon.changePasswordAsync(TestingWebServer.ServiceReference.changePassword request) {
-            return base.Channel.changePasswordAsync(request);
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getUserItemsResponse> TestingWebServer.ServiceReference.ICommon.getUserItemsAsync(TestingWebServer.ServiceReference.getUserItems request) {
+            return base.Channel.getUserItemsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<TestingWebServer.ServiceReference.changePasswordResponse> changePasswordAsync(string arg0, string arg1, string arg2) {
-            TestingWebServer.ServiceReference.changePassword inValue = new TestingWebServer.ServiceReference.changePassword();
-            inValue.Body = new TestingWebServer.ServiceReference.changePasswordBody();
+        public System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getUserItemsResponse> getUserItemsAsync(string arg0, string arg1) {
+            TestingWebServer.ServiceReference.getUserItems inValue = new TestingWebServer.ServiceReference.getUserItems();
+            inValue.Body = new TestingWebServer.ServiceReference.getUserItemsBody();
             inValue.Body.arg0 = arg0;
             inValue.Body.arg1 = arg1;
-            inValue.Body.arg2 = arg2;
-            return ((TestingWebServer.ServiceReference.ICommon)(this)).changePasswordAsync(inValue);
+            return ((TestingWebServer.ServiceReference.ICommon)(this)).getUserItemsAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        TestingWebServer.ServiceReference.getAliveTockensResponse TestingWebServer.ServiceReference.ICommon.getAliveTockens(TestingWebServer.ServiceReference.getAliveTockens request) {
+            return base.Channel.getAliveTockens(request);
+        }
+        
+        public string getAliveTockens(string arg0) {
+            TestingWebServer.ServiceReference.getAliveTockens inValue = new TestingWebServer.ServiceReference.getAliveTockens();
+            inValue.Body = new TestingWebServer.ServiceReference.getAliveTockensBody();
+            inValue.Body.arg0 = arg0;
+            TestingWebServer.ServiceReference.getAliveTockensResponse retVal = ((TestingWebServer.ServiceReference.ICommon)(this)).getAliveTockens(inValue);
+            return retVal.Body.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getAliveTockensResponse> TestingWebServer.ServiceReference.ICommon.getAliveTockensAsync(TestingWebServer.ServiceReference.getAliveTockens request) {
+            return base.Channel.getAliveTockensAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getAliveTockensResponse> getAliveTockensAsync(string arg0) {
+            TestingWebServer.ServiceReference.getAliveTockens inValue = new TestingWebServer.ServiceReference.getAliveTockens();
+            inValue.Body = new TestingWebServer.ServiceReference.getAliveTockensBody();
+            inValue.Body.arg0 = arg0;
+            return ((TestingWebServer.ServiceReference.ICommon)(this)).getAliveTockensAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        TestingWebServer.ServiceReference.getItemResponse TestingWebServer.ServiceReference.ICommon.getItem(TestingWebServer.ServiceReference.getItem request) {
+            return base.Channel.getItem(request);
+        }
+        
+        public string getItem(string arg0, int arg1) {
+            TestingWebServer.ServiceReference.getItem inValue = new TestingWebServer.ServiceReference.getItem();
+            inValue.Body = new TestingWebServer.ServiceReference.getItemBody();
+            inValue.Body.arg0 = arg0;
+            inValue.Body.arg1 = arg1;
+            TestingWebServer.ServiceReference.getItemResponse retVal = ((TestingWebServer.ServiceReference.ICommon)(this)).getItem(inValue);
+            return retVal.Body.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getItemResponse> TestingWebServer.ServiceReference.ICommon.getItemAsync(TestingWebServer.ServiceReference.getItem request) {
+            return base.Channel.getItemAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getItemResponse> getItemAsync(string arg0, int arg1) {
+            TestingWebServer.ServiceReference.getItem inValue = new TestingWebServer.ServiceReference.getItem();
+            inValue.Body = new TestingWebServer.ServiceReference.getItemBody();
+            inValue.Body.arg0 = arg0;
+            inValue.Body.arg1 = arg1;
+            return ((TestingWebServer.ServiceReference.ICommon)(this)).getItemAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        TestingWebServer.ServiceReference.unlockAllUsersResponse TestingWebServer.ServiceReference.ICommon.unlockAllUsers(TestingWebServer.ServiceReference.unlockAllUsers request) {
+            return base.Channel.unlockAllUsers(request);
+        }
+        
+        public bool unlockAllUsers(string arg0) {
+            TestingWebServer.ServiceReference.unlockAllUsers inValue = new TestingWebServer.ServiceReference.unlockAllUsers();
+            inValue.Body = new TestingWebServer.ServiceReference.unlockAllUsersBody();
+            inValue.Body.arg0 = arg0;
+            TestingWebServer.ServiceReference.unlockAllUsersResponse retVal = ((TestingWebServer.ServiceReference.ICommon)(this)).unlockAllUsers(inValue);
+            return retVal.Body.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.unlockAllUsersResponse> TestingWebServer.ServiceReference.ICommon.unlockAllUsersAsync(TestingWebServer.ServiceReference.unlockAllUsers request) {
+            return base.Channel.unlockAllUsersAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<TestingWebServer.ServiceReference.unlockAllUsersResponse> unlockAllUsersAsync(string arg0) {
+            TestingWebServer.ServiceReference.unlockAllUsers inValue = new TestingWebServer.ServiceReference.unlockAllUsers();
+            inValue.Body = new TestingWebServer.ServiceReference.unlockAllUsersBody();
+            inValue.Body.arg0 = arg0;
+            return ((TestingWebServer.ServiceReference.ICommon)(this)).unlockAllUsersAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -1536,15 +2443,41 @@ namespace TestingWebServer.ServiceReference {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        TestingWebServer.ServiceReference.getLockedAdminsResponse TestingWebServer.ServiceReference.ICommon.getLockedAdmins(TestingWebServer.ServiceReference.getLockedAdmins request) {
+            return base.Channel.getLockedAdmins(request);
+        }
+        
+        public string getLockedAdmins(string arg0) {
+            TestingWebServer.ServiceReference.getLockedAdmins inValue = new TestingWebServer.ServiceReference.getLockedAdmins();
+            inValue.Body = new TestingWebServer.ServiceReference.getLockedAdminsBody();
+            inValue.Body.arg0 = arg0;
+            TestingWebServer.ServiceReference.getLockedAdminsResponse retVal = ((TestingWebServer.ServiceReference.ICommon)(this)).getLockedAdmins(inValue);
+            return retVal.Body.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getLockedAdminsResponse> TestingWebServer.ServiceReference.ICommon.getLockedAdminsAsync(TestingWebServer.ServiceReference.getLockedAdmins request) {
+            return base.Channel.getLockedAdminsAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getLockedAdminsResponse> getLockedAdminsAsync(string arg0) {
+            TestingWebServer.ServiceReference.getLockedAdmins inValue = new TestingWebServer.ServiceReference.getLockedAdmins();
+            inValue.Body = new TestingWebServer.ServiceReference.getLockedAdminsBody();
+            inValue.Body.arg0 = arg0;
+            return ((TestingWebServer.ServiceReference.ICommon)(this)).getLockedAdminsAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         TestingWebServer.ServiceReference.addItemResponse TestingWebServer.ServiceReference.ICommon.addItem(TestingWebServer.ServiceReference.addItem request) {
             return base.Channel.addItem(request);
         }
         
-        public bool addItem(string arg0, string arg1) {
+        public bool addItem(string arg0, string arg1, int arg2) {
             TestingWebServer.ServiceReference.addItem inValue = new TestingWebServer.ServiceReference.addItem();
             inValue.Body = new TestingWebServer.ServiceReference.addItemBody();
             inValue.Body.arg0 = arg0;
             inValue.Body.arg1 = arg1;
+            inValue.Body.arg2 = arg2;
             TestingWebServer.ServiceReference.addItemResponse retVal = ((TestingWebServer.ServiceReference.ICommon)(this)).addItem(inValue);
             return retVal.Body.@return;
         }
@@ -1554,39 +2487,13 @@ namespace TestingWebServer.ServiceReference {
             return base.Channel.addItemAsync(request);
         }
         
-        public System.Threading.Tasks.Task<TestingWebServer.ServiceReference.addItemResponse> addItemAsync(string arg0, string arg1) {
+        public System.Threading.Tasks.Task<TestingWebServer.ServiceReference.addItemResponse> addItemAsync(string arg0, string arg1, int arg2) {
             TestingWebServer.ServiceReference.addItem inValue = new TestingWebServer.ServiceReference.addItem();
             inValue.Body = new TestingWebServer.ServiceReference.addItemBody();
             inValue.Body.arg0 = arg0;
             inValue.Body.arg1 = arg1;
+            inValue.Body.arg2 = arg2;
             return ((TestingWebServer.ServiceReference.ICommon)(this)).addItemAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        TestingWebServer.ServiceReference.deleteItemResponse TestingWebServer.ServiceReference.ICommon.deleteItem(TestingWebServer.ServiceReference.deleteItem request) {
-            return base.Channel.deleteItem(request);
-        }
-        
-        public bool deleteItem(string arg0, int arg1) {
-            TestingWebServer.ServiceReference.deleteItem inValue = new TestingWebServer.ServiceReference.deleteItem();
-            inValue.Body = new TestingWebServer.ServiceReference.deleteItemBody();
-            inValue.Body.arg0 = arg0;
-            inValue.Body.arg1 = arg1;
-            TestingWebServer.ServiceReference.deleteItemResponse retVal = ((TestingWebServer.ServiceReference.ICommon)(this)).deleteItem(inValue);
-            return retVal.Body.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.deleteItemResponse> TestingWebServer.ServiceReference.ICommon.deleteItemAsync(TestingWebServer.ServiceReference.deleteItem request) {
-            return base.Channel.deleteItemAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<TestingWebServer.ServiceReference.deleteItemResponse> deleteItemAsync(string arg0, int arg1) {
-            TestingWebServer.ServiceReference.deleteItem inValue = new TestingWebServer.ServiceReference.deleteItem();
-            inValue.Body = new TestingWebServer.ServiceReference.deleteItemBody();
-            inValue.Body.arg0 = arg0;
-            inValue.Body.arg1 = arg1;
-            return ((TestingWebServer.ServiceReference.ICommon)(this)).deleteItemAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -1617,34 +2524,28 @@ namespace TestingWebServer.ServiceReference {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        TestingWebServer.ServiceReference.createUserResponse TestingWebServer.ServiceReference.ICommon.createUser(TestingWebServer.ServiceReference.createUser request) {
-            return base.Channel.createUser(request);
+        TestingWebServer.ServiceReference.getAllAdminsResponse TestingWebServer.ServiceReference.ICommon.getAllAdmins(TestingWebServer.ServiceReference.getAllAdmins request) {
+            return base.Channel.getAllAdmins(request);
         }
         
-        public bool createUser(string arg0, string arg1, string arg2, bool arg3) {
-            TestingWebServer.ServiceReference.createUser inValue = new TestingWebServer.ServiceReference.createUser();
-            inValue.Body = new TestingWebServer.ServiceReference.createUserBody();
+        public string getAllAdmins(string arg0) {
+            TestingWebServer.ServiceReference.getAllAdmins inValue = new TestingWebServer.ServiceReference.getAllAdmins();
+            inValue.Body = new TestingWebServer.ServiceReference.getAllAdminsBody();
             inValue.Body.arg0 = arg0;
-            inValue.Body.arg1 = arg1;
-            inValue.Body.arg2 = arg2;
-            inValue.Body.arg3 = arg3;
-            TestingWebServer.ServiceReference.createUserResponse retVal = ((TestingWebServer.ServiceReference.ICommon)(this)).createUser(inValue);
+            TestingWebServer.ServiceReference.getAllAdminsResponse retVal = ((TestingWebServer.ServiceReference.ICommon)(this)).getAllAdmins(inValue);
             return retVal.Body.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.createUserResponse> TestingWebServer.ServiceReference.ICommon.createUserAsync(TestingWebServer.ServiceReference.createUser request) {
-            return base.Channel.createUserAsync(request);
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getAllAdminsResponse> TestingWebServer.ServiceReference.ICommon.getAllAdminsAsync(TestingWebServer.ServiceReference.getAllAdmins request) {
+            return base.Channel.getAllAdminsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<TestingWebServer.ServiceReference.createUserResponse> createUserAsync(string arg0, string arg1, string arg2, bool arg3) {
-            TestingWebServer.ServiceReference.createUser inValue = new TestingWebServer.ServiceReference.createUser();
-            inValue.Body = new TestingWebServer.ServiceReference.createUserBody();
+        public System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getAllAdminsResponse> getAllAdminsAsync(string arg0) {
+            TestingWebServer.ServiceReference.getAllAdmins inValue = new TestingWebServer.ServiceReference.getAllAdmins();
+            inValue.Body = new TestingWebServer.ServiceReference.getAllAdminsBody();
             inValue.Body.arg0 = arg0;
-            inValue.Body.arg1 = arg1;
-            inValue.Body.arg2 = arg2;
-            inValue.Body.arg3 = arg3;
-            return ((TestingWebServer.ServiceReference.ICommon)(this)).createUserAsync(inValue);
+            return ((TestingWebServer.ServiceReference.ICommon)(this)).getAllAdminsAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -1721,28 +2622,319 @@ namespace TestingWebServer.ServiceReference {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        TestingWebServer.ServiceReference.unlockUsersResponse TestingWebServer.ServiceReference.ICommon.unlockUsers(TestingWebServer.ServiceReference.unlockUsers request) {
-            return base.Channel.unlockUsers(request);
+        TestingWebServer.ServiceReference.getLoginedUsersResponse TestingWebServer.ServiceReference.ICommon.getLoginedUsers(TestingWebServer.ServiceReference.getLoginedUsers request) {
+            return base.Channel.getLoginedUsers(request);
         }
         
-        public bool unlockUsers(string arg0) {
-            TestingWebServer.ServiceReference.unlockUsers inValue = new TestingWebServer.ServiceReference.unlockUsers();
-            inValue.Body = new TestingWebServer.ServiceReference.unlockUsersBody();
+        public string getLoginedUsers(string arg0) {
+            TestingWebServer.ServiceReference.getLoginedUsers inValue = new TestingWebServer.ServiceReference.getLoginedUsers();
+            inValue.Body = new TestingWebServer.ServiceReference.getLoginedUsersBody();
             inValue.Body.arg0 = arg0;
-            TestingWebServer.ServiceReference.unlockUsersResponse retVal = ((TestingWebServer.ServiceReference.ICommon)(this)).unlockUsers(inValue);
+            TestingWebServer.ServiceReference.getLoginedUsersResponse retVal = ((TestingWebServer.ServiceReference.ICommon)(this)).getLoginedUsers(inValue);
             return retVal.Body.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.unlockUsersResponse> TestingWebServer.ServiceReference.ICommon.unlockUsersAsync(TestingWebServer.ServiceReference.unlockUsers request) {
-            return base.Channel.unlockUsersAsync(request);
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getLoginedUsersResponse> TestingWebServer.ServiceReference.ICommon.getLoginedUsersAsync(TestingWebServer.ServiceReference.getLoginedUsers request) {
+            return base.Channel.getLoginedUsersAsync(request);
         }
         
-        public System.Threading.Tasks.Task<TestingWebServer.ServiceReference.unlockUsersResponse> unlockUsersAsync(string arg0) {
-            TestingWebServer.ServiceReference.unlockUsers inValue = new TestingWebServer.ServiceReference.unlockUsers();
-            inValue.Body = new TestingWebServer.ServiceReference.unlockUsersBody();
+        public System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getLoginedUsersResponse> getLoginedUsersAsync(string arg0) {
+            TestingWebServer.ServiceReference.getLoginedUsers inValue = new TestingWebServer.ServiceReference.getLoginedUsers();
+            inValue.Body = new TestingWebServer.ServiceReference.getLoginedUsersBody();
             inValue.Body.arg0 = arg0;
-            return ((TestingWebServer.ServiceReference.ICommon)(this)).unlockUsersAsync(inValue);
+            return ((TestingWebServer.ServiceReference.ICommon)(this)).getLoginedUsersAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        TestingWebServer.ServiceReference.getAllItemsIndexesResponse TestingWebServer.ServiceReference.ICommon.getAllItemsIndexes(TestingWebServer.ServiceReference.getAllItemsIndexes request) {
+            return base.Channel.getAllItemsIndexes(request);
+        }
+        
+        public string getAllItemsIndexes(string arg0) {
+            TestingWebServer.ServiceReference.getAllItemsIndexes inValue = new TestingWebServer.ServiceReference.getAllItemsIndexes();
+            inValue.Body = new TestingWebServer.ServiceReference.getAllItemsIndexesBody();
+            inValue.Body.arg0 = arg0;
+            TestingWebServer.ServiceReference.getAllItemsIndexesResponse retVal = ((TestingWebServer.ServiceReference.ICommon)(this)).getAllItemsIndexes(inValue);
+            return retVal.Body.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getAllItemsIndexesResponse> TestingWebServer.ServiceReference.ICommon.getAllItemsIndexesAsync(TestingWebServer.ServiceReference.getAllItemsIndexes request) {
+            return base.Channel.getAllItemsIndexesAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getAllItemsIndexesResponse> getAllItemsIndexesAsync(string arg0) {
+            TestingWebServer.ServiceReference.getAllItemsIndexes inValue = new TestingWebServer.ServiceReference.getAllItemsIndexes();
+            inValue.Body = new TestingWebServer.ServiceReference.getAllItemsIndexesBody();
+            inValue.Body.arg0 = arg0;
+            return ((TestingWebServer.ServiceReference.ICommon)(this)).getAllItemsIndexesAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        TestingWebServer.ServiceReference.setTokenLifeTimeResponse TestingWebServer.ServiceReference.ICommon.setTokenLifeTime(TestingWebServer.ServiceReference.setTokenLifeTime request) {
+            return base.Channel.setTokenLifeTime(request);
+        }
+        
+        public bool setTokenLifeTime(string arg0, long arg1) {
+            TestingWebServer.ServiceReference.setTokenLifeTime inValue = new TestingWebServer.ServiceReference.setTokenLifeTime();
+            inValue.Body = new TestingWebServer.ServiceReference.setTokenLifeTimeBody();
+            inValue.Body.arg0 = arg0;
+            inValue.Body.arg1 = arg1;
+            TestingWebServer.ServiceReference.setTokenLifeTimeResponse retVal = ((TestingWebServer.ServiceReference.ICommon)(this)).setTokenLifeTime(inValue);
+            return retVal.Body.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.setTokenLifeTimeResponse> TestingWebServer.ServiceReference.ICommon.setTokenLifeTimeAsync(TestingWebServer.ServiceReference.setTokenLifeTime request) {
+            return base.Channel.setTokenLifeTimeAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<TestingWebServer.ServiceReference.setTokenLifeTimeResponse> setTokenLifeTimeAsync(string arg0, long arg1) {
+            TestingWebServer.ServiceReference.setTokenLifeTime inValue = new TestingWebServer.ServiceReference.setTokenLifeTime();
+            inValue.Body = new TestingWebServer.ServiceReference.setTokenLifeTimeBody();
+            inValue.Body.arg0 = arg0;
+            inValue.Body.arg1 = arg1;
+            return ((TestingWebServer.ServiceReference.ICommon)(this)).setTokenLifeTimeAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        TestingWebServer.ServiceReference.getAllUsersResponse TestingWebServer.ServiceReference.ICommon.getAllUsers(TestingWebServer.ServiceReference.getAllUsers request) {
+            return base.Channel.getAllUsers(request);
+        }
+        
+        public string getAllUsers(string arg0) {
+            TestingWebServer.ServiceReference.getAllUsers inValue = new TestingWebServer.ServiceReference.getAllUsers();
+            inValue.Body = new TestingWebServer.ServiceReference.getAllUsersBody();
+            inValue.Body.arg0 = arg0;
+            TestingWebServer.ServiceReference.getAllUsersResponse retVal = ((TestingWebServer.ServiceReference.ICommon)(this)).getAllUsers(inValue);
+            return retVal.Body.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getAllUsersResponse> TestingWebServer.ServiceReference.ICommon.getAllUsersAsync(TestingWebServer.ServiceReference.getAllUsers request) {
+            return base.Channel.getAllUsersAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getAllUsersResponse> getAllUsersAsync(string arg0) {
+            TestingWebServer.ServiceReference.getAllUsers inValue = new TestingWebServer.ServiceReference.getAllUsers();
+            inValue.Body = new TestingWebServer.ServiceReference.getAllUsersBody();
+            inValue.Body.arg0 = arg0;
+            return ((TestingWebServer.ServiceReference.ICommon)(this)).getAllUsersAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        TestingWebServer.ServiceReference.getLoginedAdminsResponse TestingWebServer.ServiceReference.ICommon.getLoginedAdmins(TestingWebServer.ServiceReference.getLoginedAdmins request) {
+            return base.Channel.getLoginedAdmins(request);
+        }
+        
+        public string getLoginedAdmins(string arg0) {
+            TestingWebServer.ServiceReference.getLoginedAdmins inValue = new TestingWebServer.ServiceReference.getLoginedAdmins();
+            inValue.Body = new TestingWebServer.ServiceReference.getLoginedAdminsBody();
+            inValue.Body.arg0 = arg0;
+            TestingWebServer.ServiceReference.getLoginedAdminsResponse retVal = ((TestingWebServer.ServiceReference.ICommon)(this)).getLoginedAdmins(inValue);
+            return retVal.Body.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getLoginedAdminsResponse> TestingWebServer.ServiceReference.ICommon.getLoginedAdminsAsync(TestingWebServer.ServiceReference.getLoginedAdmins request) {
+            return base.Channel.getLoginedAdminsAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getLoginedAdminsResponse> getLoginedAdminsAsync(string arg0) {
+            TestingWebServer.ServiceReference.getLoginedAdmins inValue = new TestingWebServer.ServiceReference.getLoginedAdmins();
+            inValue.Body = new TestingWebServer.ServiceReference.getLoginedAdminsBody();
+            inValue.Body.arg0 = arg0;
+            return ((TestingWebServer.ServiceReference.ICommon)(this)).getLoginedAdminsAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        TestingWebServer.ServiceReference.updateItemResponse TestingWebServer.ServiceReference.ICommon.updateItem(TestingWebServer.ServiceReference.updateItem request) {
+            return base.Channel.updateItem(request);
+        }
+        
+        public bool updateItem(string arg0, int arg1, string arg2) {
+            TestingWebServer.ServiceReference.updateItem inValue = new TestingWebServer.ServiceReference.updateItem();
+            inValue.Body = new TestingWebServer.ServiceReference.updateItemBody();
+            inValue.Body.arg0 = arg0;
+            inValue.Body.arg1 = arg1;
+            inValue.Body.arg2 = arg2;
+            TestingWebServer.ServiceReference.updateItemResponse retVal = ((TestingWebServer.ServiceReference.ICommon)(this)).updateItem(inValue);
+            return retVal.Body.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.updateItemResponse> TestingWebServer.ServiceReference.ICommon.updateItemAsync(TestingWebServer.ServiceReference.updateItem request) {
+            return base.Channel.updateItemAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<TestingWebServer.ServiceReference.updateItemResponse> updateItemAsync(string arg0, int arg1, string arg2) {
+            TestingWebServer.ServiceReference.updateItem inValue = new TestingWebServer.ServiceReference.updateItem();
+            inValue.Body = new TestingWebServer.ServiceReference.updateItemBody();
+            inValue.Body.arg0 = arg0;
+            inValue.Body.arg1 = arg1;
+            inValue.Body.arg2 = arg2;
+            return ((TestingWebServer.ServiceReference.ICommon)(this)).updateItemAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        TestingWebServer.ServiceReference.unlockUserResponse TestingWebServer.ServiceReference.ICommon.unlockUser(TestingWebServer.ServiceReference.unlockUser request) {
+            return base.Channel.unlockUser(request);
+        }
+        
+        public bool unlockUser(string arg0, string arg1) {
+            TestingWebServer.ServiceReference.unlockUser inValue = new TestingWebServer.ServiceReference.unlockUser();
+            inValue.Body = new TestingWebServer.ServiceReference.unlockUserBody();
+            inValue.Body.arg0 = arg0;
+            inValue.Body.arg1 = arg1;
+            TestingWebServer.ServiceReference.unlockUserResponse retVal = ((TestingWebServer.ServiceReference.ICommon)(this)).unlockUser(inValue);
+            return retVal.Body.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.unlockUserResponse> TestingWebServer.ServiceReference.ICommon.unlockUserAsync(TestingWebServer.ServiceReference.unlockUser request) {
+            return base.Channel.unlockUserAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<TestingWebServer.ServiceReference.unlockUserResponse> unlockUserAsync(string arg0, string arg1) {
+            TestingWebServer.ServiceReference.unlockUser inValue = new TestingWebServer.ServiceReference.unlockUser();
+            inValue.Body = new TestingWebServer.ServiceReference.unlockUserBody();
+            inValue.Body.arg0 = arg0;
+            inValue.Body.arg1 = arg1;
+            return ((TestingWebServer.ServiceReference.ICommon)(this)).unlockUserAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        TestingWebServer.ServiceReference.changePasswordResponse TestingWebServer.ServiceReference.ICommon.changePassword(TestingWebServer.ServiceReference.changePassword request) {
+            return base.Channel.changePassword(request);
+        }
+        
+        public bool changePassword(string arg0, string arg1, string arg2) {
+            TestingWebServer.ServiceReference.changePassword inValue = new TestingWebServer.ServiceReference.changePassword();
+            inValue.Body = new TestingWebServer.ServiceReference.changePasswordBody();
+            inValue.Body.arg0 = arg0;
+            inValue.Body.arg1 = arg1;
+            inValue.Body.arg2 = arg2;
+            TestingWebServer.ServiceReference.changePasswordResponse retVal = ((TestingWebServer.ServiceReference.ICommon)(this)).changePassword(inValue);
+            return retVal.Body.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.changePasswordResponse> TestingWebServer.ServiceReference.ICommon.changePasswordAsync(TestingWebServer.ServiceReference.changePassword request) {
+            return base.Channel.changePasswordAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<TestingWebServer.ServiceReference.changePasswordResponse> changePasswordAsync(string arg0, string arg1, string arg2) {
+            TestingWebServer.ServiceReference.changePassword inValue = new TestingWebServer.ServiceReference.changePassword();
+            inValue.Body = new TestingWebServer.ServiceReference.changePasswordBody();
+            inValue.Body.arg0 = arg0;
+            inValue.Body.arg1 = arg1;
+            inValue.Body.arg2 = arg2;
+            return ((TestingWebServer.ServiceReference.ICommon)(this)).changePasswordAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        TestingWebServer.ServiceReference.deleteItemResponse TestingWebServer.ServiceReference.ICommon.deleteItem(TestingWebServer.ServiceReference.deleteItem request) {
+            return base.Channel.deleteItem(request);
+        }
+        
+        public bool deleteItem(string arg0, int arg1) {
+            TestingWebServer.ServiceReference.deleteItem inValue = new TestingWebServer.ServiceReference.deleteItem();
+            inValue.Body = new TestingWebServer.ServiceReference.deleteItemBody();
+            inValue.Body.arg0 = arg0;
+            inValue.Body.arg1 = arg1;
+            TestingWebServer.ServiceReference.deleteItemResponse retVal = ((TestingWebServer.ServiceReference.ICommon)(this)).deleteItem(inValue);
+            return retVal.Body.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.deleteItemResponse> TestingWebServer.ServiceReference.ICommon.deleteItemAsync(TestingWebServer.ServiceReference.deleteItem request) {
+            return base.Channel.deleteItemAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<TestingWebServer.ServiceReference.deleteItemResponse> deleteItemAsync(string arg0, int arg1) {
+            TestingWebServer.ServiceReference.deleteItem inValue = new TestingWebServer.ServiceReference.deleteItem();
+            inValue.Body = new TestingWebServer.ServiceReference.deleteItemBody();
+            inValue.Body.arg0 = arg0;
+            inValue.Body.arg1 = arg1;
+            return ((TestingWebServer.ServiceReference.ICommon)(this)).deleteItemAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        TestingWebServer.ServiceReference.getLockedUsersResponse TestingWebServer.ServiceReference.ICommon.getLockedUsers(TestingWebServer.ServiceReference.getLockedUsers request) {
+            return base.Channel.getLockedUsers(request);
+        }
+        
+        public string getLockedUsers(string arg0) {
+            TestingWebServer.ServiceReference.getLockedUsers inValue = new TestingWebServer.ServiceReference.getLockedUsers();
+            inValue.Body = new TestingWebServer.ServiceReference.getLockedUsersBody();
+            inValue.Body.arg0 = arg0;
+            TestingWebServer.ServiceReference.getLockedUsersResponse retVal = ((TestingWebServer.ServiceReference.ICommon)(this)).getLockedUsers(inValue);
+            return retVal.Body.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getLockedUsersResponse> TestingWebServer.ServiceReference.ICommon.getLockedUsersAsync(TestingWebServer.ServiceReference.getLockedUsers request) {
+            return base.Channel.getLockedUsersAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<TestingWebServer.ServiceReference.getLockedUsersResponse> getLockedUsersAsync(string arg0) {
+            TestingWebServer.ServiceReference.getLockedUsers inValue = new TestingWebServer.ServiceReference.getLockedUsers();
+            inValue.Body = new TestingWebServer.ServiceReference.getLockedUsersBody();
+            inValue.Body.arg0 = arg0;
+            return ((TestingWebServer.ServiceReference.ICommon)(this)).getLockedUsersAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        TestingWebServer.ServiceReference.createUserResponse TestingWebServer.ServiceReference.ICommon.createUser(TestingWebServer.ServiceReference.createUser request) {
+            return base.Channel.createUser(request);
+        }
+        
+        public bool createUser(string arg0, string arg1, string arg2, bool arg3) {
+            TestingWebServer.ServiceReference.createUser inValue = new TestingWebServer.ServiceReference.createUser();
+            inValue.Body = new TestingWebServer.ServiceReference.createUserBody();
+            inValue.Body.arg0 = arg0;
+            inValue.Body.arg1 = arg1;
+            inValue.Body.arg2 = arg2;
+            inValue.Body.arg3 = arg3;
+            TestingWebServer.ServiceReference.createUserResponse retVal = ((TestingWebServer.ServiceReference.ICommon)(this)).createUser(inValue);
+            return retVal.Body.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.createUserResponse> TestingWebServer.ServiceReference.ICommon.createUserAsync(TestingWebServer.ServiceReference.createUser request) {
+            return base.Channel.createUserAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<TestingWebServer.ServiceReference.createUserResponse> createUserAsync(string arg0, string arg1, string arg2, bool arg3) {
+            TestingWebServer.ServiceReference.createUser inValue = new TestingWebServer.ServiceReference.createUser();
+            inValue.Body = new TestingWebServer.ServiceReference.createUserBody();
+            inValue.Body.arg0 = arg0;
+            inValue.Body.arg1 = arg1;
+            inValue.Body.arg2 = arg2;
+            inValue.Body.arg3 = arg3;
+            return ((TestingWebServer.ServiceReference.ICommon)(this)).createUserAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        TestingWebServer.ServiceReference.resetServiceToInitialStateResponse TestingWebServer.ServiceReference.ICommon.resetServiceToInitialState(TestingWebServer.ServiceReference.resetServiceToInitialState request) {
+            return base.Channel.resetServiceToInitialState(request);
+        }
+        
+        public bool resetServiceToInitialState() {
+            TestingWebServer.ServiceReference.resetServiceToInitialState inValue = new TestingWebServer.ServiceReference.resetServiceToInitialState();
+            TestingWebServer.ServiceReference.resetServiceToInitialStateResponse retVal = ((TestingWebServer.ServiceReference.ICommon)(this)).resetServiceToInitialState(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<TestingWebServer.ServiceReference.resetServiceToInitialStateResponse> TestingWebServer.ServiceReference.ICommon.resetServiceToInitialStateAsync(TestingWebServer.ServiceReference.resetServiceToInitialState request) {
+            return base.Channel.resetServiceToInitialStateAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<TestingWebServer.ServiceReference.resetServiceToInitialStateResponse> resetServiceToInitialStateAsync() {
+            TestingWebServer.ServiceReference.resetServiceToInitialState inValue = new TestingWebServer.ServiceReference.resetServiceToInitialState();
+            return ((TestingWebServer.ServiceReference.ICommon)(this)).resetServiceToInitialStateAsync(inValue);
         }
     }
 }

@@ -5,6 +5,84 @@
       <xsd:import schemaLocation="http://localhost:8080/dashboard/services/CommonPort?xsd=common_schema1.xsd" namespace="http://edu.softserve.com/" />
     </xsd:schema>
   </wsdl:types>
+  <wsdl:message name="getTokenLifeTime">
+    <wsdl:part name="parameters" element="tns:getTokenLifeTime" />
+  </wsdl:message>
+  <wsdl:message name="getUserItem">
+    <wsdl:part name="parameters" element="tns:getUserItem" />
+  </wsdl:message>
+  <wsdl:message name="lockUserResponse">
+    <wsdl:part name="parameters" element="tns:lockUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="getUserItems">
+    <wsdl:part name="parameters" element="tns:getUserItems" />
+  </wsdl:message>
+  <wsdl:message name="unlockUserResponse">
+    <wsdl:part name="parameters" element="tns:unlockUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="getAliveTockens">
+    <wsdl:part name="parameters" element="tns:getAliveTockens" />
+  </wsdl:message>
+  <wsdl:message name="getItem">
+    <wsdl:part name="parameters" element="tns:getItem" />
+  </wsdl:message>
+  <wsdl:message name="unlockAllUsers">
+    <wsdl:part name="parameters" element="tns:unlockAllUsers" />
+  </wsdl:message>
+  <wsdl:message name="unlockAllUsersResponse">
+    <wsdl:part name="parameters" element="tns:unlockAllUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="logout">
+    <wsdl:part name="parameters" element="tns:logout" />
+  </wsdl:message>
+  <wsdl:message name="removeUser">
+    <wsdl:part name="parameters" element="tns:removeUser" />
+  </wsdl:message>
+  <wsdl:message name="getUserName">
+    <wsdl:part name="parameters" element="tns:getUserName" />
+  </wsdl:message>
+  <wsdl:message name="getTokenLifeTimeResponse">
+    <wsdl:part name="parameters" element="tns:getTokenLifeTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="getCoolDownTime">
+    <wsdl:part name="parameters" element="tns:getCoolDownTime" />
+  </wsdl:message>
+  <wsdl:message name="updateItemResponse">
+    <wsdl:part name="parameters" element="tns:updateItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="getAllItemsResponse">
+    <wsdl:part name="parameters" element="tns:getAllItemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="loginResponse">
+    <wsdl:part name="parameters" element="tns:loginResponse" />
+  </wsdl:message>
+  <wsdl:message name="getAllUsers">
+    <wsdl:part name="parameters" element="tns:getAllUsers" />
+  </wsdl:message>
+  <wsdl:message name="getLoginedAdmins">
+    <wsdl:part name="parameters" element="tns:getLoginedAdmins" />
+  </wsdl:message>
+  <wsdl:message name="updateItem">
+    <wsdl:part name="parameters" element="tns:updateItem" />
+  </wsdl:message>
+  <wsdl:message name="resetServiceToInitialStateResponse">
+    <wsdl:part name="parameters" element="tns:resetServiceToInitialStateResponse" />
+  </wsdl:message>
+  <wsdl:message name="getAllItemsIndexesResponse">
+    <wsdl:part name="parameters" element="tns:getAllItemsIndexesResponse" />
+  </wsdl:message>
+  <wsdl:message name="getCoolDownTimeResponse">
+    <wsdl:part name="parameters" element="tns:getCoolDownTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="removeUserResponse">
+    <wsdl:part name="parameters" element="tns:removeUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="getUserItemResponse">
+    <wsdl:part name="parameters" element="tns:getUserItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="getUserItemsResponse">
+    <wsdl:part name="parameters" element="tns:getUserItemsResponse" />
+  </wsdl:message>
   <wsdl:message name="changePasswordResponse">
     <wsdl:part name="parameters" element="tns:changePasswordResponse" />
   </wsdl:message>
@@ -17,59 +95,44 @@
   <wsdl:message name="getAllItems">
     <wsdl:part name="parameters" element="tns:getAllItems" />
   </wsdl:message>
-  <wsdl:message name="getTokenLifeTime">
-    <wsdl:part name="parameters" element="tns:getTokenLifeTime" />
-  </wsdl:message>
   <wsdl:message name="getUserNameResponse">
     <wsdl:part name="parameters" element="tns:getUserNameResponse" />
   </wsdl:message>
-  <wsdl:message name="lockUserResponse">
-    <wsdl:part name="parameters" element="tns:lockUserResponse" />
+  <wsdl:message name="getAllAdminsResponse">
+    <wsdl:part name="parameters" element="tns:getAllAdminsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getLoginedUsersResponse">
+    <wsdl:part name="parameters" element="tns:getLoginedUsersResponse" />
   </wsdl:message>
   <wsdl:message name="login">
     <wsdl:part name="parameters" element="tns:login" />
   </wsdl:message>
-  <wsdl:message name="logout">
-    <wsdl:part name="parameters" element="tns:logout" />
+  <wsdl:message name="getLockedAdmins">
+    <wsdl:part name="parameters" element="tns:getLockedAdmins" />
   </wsdl:message>
   <wsdl:message name="addItem">
     <wsdl:part name="parameters" element="tns:addItem" />
   </wsdl:message>
-  <wsdl:message name="removeUser">
-    <wsdl:part name="parameters" element="tns:removeUser" />
-  </wsdl:message>
-  <wsdl:message name="unlockUsersResponse">
-    <wsdl:part name="parameters" element="tns:unlockUsersResponse" />
+  <wsdl:message name="getAllAdmins">
+    <wsdl:part name="parameters" element="tns:getAllAdmins" />
   </wsdl:message>
   <wsdl:message name="lockUser">
     <wsdl:part name="parameters" element="tns:lockUser" />
   </wsdl:message>
+  <wsdl:message name="getLoginedAdminsResponse">
+    <wsdl:part name="parameters" element="tns:getLoginedAdminsResponse" />
+  </wsdl:message>
   <wsdl:message name="addItemResponse">
     <wsdl:part name="parameters" element="tns:addItemResponse" />
   </wsdl:message>
-  <wsdl:message name="getUserName">
-    <wsdl:part name="parameters" element="tns:getUserName" />
+  <wsdl:message name="getLoginedUsers">
+    <wsdl:part name="parameters" element="tns:getLoginedUsers" />
   </wsdl:message>
-  <wsdl:message name="getTokenLifeTimeResponse">
-    <wsdl:part name="parameters" element="tns:getTokenLifeTimeResponse" />
-  </wsdl:message>
-  <wsdl:message name="updateItemResponse">
-    <wsdl:part name="parameters" element="tns:updateItemResponse" />
-  </wsdl:message>
-  <wsdl:message name="getCoolDownTime">
-    <wsdl:part name="parameters" element="tns:getCoolDownTime" />
-  </wsdl:message>
-  <wsdl:message name="getAllItemsResponse">
-    <wsdl:part name="parameters" element="tns:getAllItemsResponse" />
-  </wsdl:message>
-  <wsdl:message name="loginResponse">
-    <wsdl:part name="parameters" element="tns:loginResponse" />
+  <wsdl:message name="getAllItemsIndexes">
+    <wsdl:part name="parameters" element="tns:getAllItemsIndexes" />
   </wsdl:message>
   <wsdl:message name="setTokenLifeTime">
     <wsdl:part name="parameters" element="tns:setTokenLifeTime" />
-  </wsdl:message>
-  <wsdl:message name="getAllUsers">
-    <wsdl:part name="parameters" element="tns:getAllUsers" />
   </wsdl:message>
   <wsdl:message name="setTokenLifeTimeResponse">
     <wsdl:part name="parameters" element="tns:setTokenLifeTimeResponse" />
@@ -77,8 +140,14 @@
   <wsdl:message name="createUserResponse">
     <wsdl:part name="parameters" element="tns:createUserResponse" />
   </wsdl:message>
-  <wsdl:message name="updateItem">
-    <wsdl:part name="parameters" element="tns:updateItem" />
+  <wsdl:message name="getAliveTockensResponse">
+    <wsdl:part name="parameters" element="tns:getAliveTockensResponse" />
+  </wsdl:message>
+  <wsdl:message name="getLockedAdminsResponse">
+    <wsdl:part name="parameters" element="tns:getLockedAdminsResponse" />
+  </wsdl:message>
+  <wsdl:message name="unlockUser">
+    <wsdl:part name="parameters" element="tns:unlockUser" />
   </wsdl:message>
   <wsdl:message name="setCoolDownTimeResponse">
     <wsdl:part name="parameters" element="tns:setCoolDownTimeResponse" />
@@ -86,39 +155,34 @@
   <wsdl:message name="changePassword">
     <wsdl:part name="parameters" element="tns:changePassword" />
   </wsdl:message>
-  <wsdl:message name="getCoolDownTimeResponse">
-    <wsdl:part name="parameters" element="tns:getCoolDownTimeResponse" />
-  </wsdl:message>
   <wsdl:message name="getAllUsersResponse">
     <wsdl:part name="parameters" element="tns:getAllUsersResponse" />
   </wsdl:message>
-  <wsdl:message name="removeUserResponse">
-    <wsdl:part name="parameters" element="tns:removeUserResponse" />
+  <wsdl:message name="getLockedUsersResponse">
+    <wsdl:part name="parameters" element="tns:getLockedUsersResponse" />
   </wsdl:message>
   <wsdl:message name="deleteItem">
     <wsdl:part name="parameters" element="tns:deleteItem" />
   </wsdl:message>
+  <wsdl:message name="getItemResponse">
+    <wsdl:part name="parameters" element="tns:getItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="getLockedUsers">
+    <wsdl:part name="parameters" element="tns:getLockedUsers" />
+  </wsdl:message>
   <wsdl:message name="createUser">
     <wsdl:part name="parameters" element="tns:createUser" />
   </wsdl:message>
+  <wsdl:message name="resetServiceToInitialState">
+    <wsdl:part name="parameters" element="tns:resetServiceToInitialState" />
+  </wsdl:message>
   <wsdl:message name="deleteItemResponse">
     <wsdl:part name="parameters" element="tns:deleteItemResponse" />
-  </wsdl:message>
-  <wsdl:message name="unlockUsers">
-    <wsdl:part name="parameters" element="tns:unlockUsers" />
   </wsdl:message>
   <wsdl:portType name="ICommon">
     <wsdl:operation name="setCoolDownTime">
       <wsdl:input name="setCoolDownTime" message="tns:setCoolDownTime" />
       <wsdl:output name="setCoolDownTimeResponse" message="tns:setCoolDownTimeResponse" />
-    </wsdl:operation>
-    <wsdl:operation name="setTokenLifeTime">
-      <wsdl:input name="setTokenLifeTime" message="tns:setTokenLifeTime" />
-      <wsdl:output name="setTokenLifeTimeResponse" message="tns:setTokenLifeTimeResponse" />
-    </wsdl:operation>
-    <wsdl:operation name="getAllUsers">
-      <wsdl:input name="getAllUsers" message="tns:getAllUsers" />
-      <wsdl:output name="getAllUsersResponse" message="tns:getAllUsersResponse" />
     </wsdl:operation>
     <wsdl:operation name="getAllItems">
       <wsdl:input name="getAllItems" message="tns:getAllItems" />
@@ -128,13 +192,25 @@
       <wsdl:input name="getTokenLifeTime" message="tns:getTokenLifeTime" />
       <wsdl:output name="getTokenLifeTimeResponse" message="tns:getTokenLifeTimeResponse" />
     </wsdl:operation>
-    <wsdl:operation name="updateItem">
-      <wsdl:input name="updateItem" message="tns:updateItem" />
-      <wsdl:output name="updateItemResponse" message="tns:updateItemResponse" />
+    <wsdl:operation name="getUserItem">
+      <wsdl:input name="getUserItem" message="tns:getUserItem" />
+      <wsdl:output name="getUserItemResponse" message="tns:getUserItemResponse" />
     </wsdl:operation>
-    <wsdl:operation name="changePassword">
-      <wsdl:input name="changePassword" message="tns:changePassword" />
-      <wsdl:output name="changePasswordResponse" message="tns:changePasswordResponse" />
+    <wsdl:operation name="getUserItems">
+      <wsdl:input name="getUserItems" message="tns:getUserItems" />
+      <wsdl:output name="getUserItemsResponse" message="tns:getUserItemsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getAliveTockens">
+      <wsdl:input name="getAliveTockens" message="tns:getAliveTockens" />
+      <wsdl:output name="getAliveTockensResponse" message="tns:getAliveTockensResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getItem">
+      <wsdl:input name="getItem" message="tns:getItem" />
+      <wsdl:output name="getItemResponse" message="tns:getItemResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="unlockAllUsers">
+      <wsdl:input name="unlockAllUsers" message="tns:unlockAllUsers" />
+      <wsdl:output name="unlockAllUsersResponse" message="tns:unlockAllUsersResponse" />
     </wsdl:operation>
     <wsdl:operation name="login">
       <wsdl:input name="login" message="tns:login" />
@@ -144,21 +220,21 @@
       <wsdl:input name="logout" message="tns:logout" />
       <wsdl:output name="logoutResponse" message="tns:logoutResponse" />
     </wsdl:operation>
+    <wsdl:operation name="getLockedAdmins">
+      <wsdl:input name="getLockedAdmins" message="tns:getLockedAdmins" />
+      <wsdl:output name="getLockedAdminsResponse" message="tns:getLockedAdminsResponse" />
+    </wsdl:operation>
     <wsdl:operation name="addItem">
       <wsdl:input name="addItem" message="tns:addItem" />
       <wsdl:output name="addItemResponse" message="tns:addItemResponse" />
-    </wsdl:operation>
-    <wsdl:operation name="deleteItem">
-      <wsdl:input name="deleteItem" message="tns:deleteItem" />
-      <wsdl:output name="deleteItemResponse" message="tns:deleteItemResponse" />
     </wsdl:operation>
     <wsdl:operation name="removeUser">
       <wsdl:input name="removeUser" message="tns:removeUser" />
       <wsdl:output name="removeUserResponse" message="tns:removeUserResponse" />
     </wsdl:operation>
-    <wsdl:operation name="createUser">
-      <wsdl:input name="createUser" message="tns:createUser" />
-      <wsdl:output name="createUserResponse" message="tns:createUserResponse" />
+    <wsdl:operation name="getAllAdmins">
+      <wsdl:input name="getAllAdmins" message="tns:getAllAdmins" />
+      <wsdl:output name="getAllAdminsResponse" message="tns:getAllAdminsResponse" />
     </wsdl:operation>
     <wsdl:operation name="lockUser">
       <wsdl:input name="lockUser" message="tns:lockUser" />
@@ -172,9 +248,53 @@
       <wsdl:input name="getCoolDownTime" message="tns:getCoolDownTime" />
       <wsdl:output name="getCoolDownTimeResponse" message="tns:getCoolDownTimeResponse" />
     </wsdl:operation>
-    <wsdl:operation name="unlockUsers">
-      <wsdl:input name="unlockUsers" message="tns:unlockUsers" />
-      <wsdl:output name="unlockUsersResponse" message="tns:unlockUsersResponse" />
+    <wsdl:operation name="getLoginedUsers">
+      <wsdl:input name="getLoginedUsers" message="tns:getLoginedUsers" />
+      <wsdl:output name="getLoginedUsersResponse" message="tns:getLoginedUsersResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllItemsIndexes">
+      <wsdl:input name="getAllItemsIndexes" message="tns:getAllItemsIndexes" />
+      <wsdl:output name="getAllItemsIndexesResponse" message="tns:getAllItemsIndexesResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="setTokenLifeTime">
+      <wsdl:input name="setTokenLifeTime" message="tns:setTokenLifeTime" />
+      <wsdl:output name="setTokenLifeTimeResponse" message="tns:setTokenLifeTimeResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllUsers">
+      <wsdl:input name="getAllUsers" message="tns:getAllUsers" />
+      <wsdl:output name="getAllUsersResponse" message="tns:getAllUsersResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getLoginedAdmins">
+      <wsdl:input name="getLoginedAdmins" message="tns:getLoginedAdmins" />
+      <wsdl:output name="getLoginedAdminsResponse" message="tns:getLoginedAdminsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="updateItem">
+      <wsdl:input name="updateItem" message="tns:updateItem" />
+      <wsdl:output name="updateItemResponse" message="tns:updateItemResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="unlockUser">
+      <wsdl:input name="unlockUser" message="tns:unlockUser" />
+      <wsdl:output name="unlockUserResponse" message="tns:unlockUserResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="changePassword">
+      <wsdl:input name="changePassword" message="tns:changePassword" />
+      <wsdl:output name="changePasswordResponse" message="tns:changePasswordResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteItem">
+      <wsdl:input name="deleteItem" message="tns:deleteItem" />
+      <wsdl:output name="deleteItemResponse" message="tns:deleteItemResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getLockedUsers">
+      <wsdl:input name="getLockedUsers" message="tns:getLockedUsers" />
+      <wsdl:output name="getLockedUsersResponse" message="tns:getLockedUsersResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="createUser">
+      <wsdl:input name="createUser" message="tns:createUser" />
+      <wsdl:output name="createUserResponse" message="tns:createUserResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="resetServiceToInitialState">
+      <wsdl:input name="resetServiceToInitialState" message="tns:resetServiceToInitialState" />
+      <wsdl:output name="resetServiceToInitialStateResponse" message="tns:resetServiceToInitialStateResponse" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="CommonServiceSoapBinding" type="tns:ICommon">
@@ -188,21 +308,12 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="setTokenLifeTime">
-      <soap:operation soapAction="urn:SetTokenLifeTime" style="document" />
-      <wsdl:input name="setTokenLifeTime">
+    <wsdl:operation name="getAllItems">
+      <soap:operation soapAction="urn:GetAllItems" style="document" />
+      <wsdl:input name="getAllItems">
         <soap:body use="literal" />
       </wsdl:input>
-      <wsdl:output name="setTokenLifeTimeResponse">
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="getAllUsers">
-      <soap:operation soapAction="urn:GetAllUsers" style="document" />
-      <wsdl:input name="getAllUsers">
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output name="getAllUsersResponse">
+      <wsdl:output name="getAllItemsResponse">
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
@@ -215,30 +326,48 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="getAllItems">
-      <soap:operation soapAction="urn:GetAllItems" style="document" />
-      <wsdl:input name="getAllItems">
+    <wsdl:operation name="getUserItem">
+      <soap:operation soapAction="urn:GetUserItem" style="document" />
+      <wsdl:input name="getUserItem">
         <soap:body use="literal" />
       </wsdl:input>
-      <wsdl:output name="getAllItemsResponse">
+      <wsdl:output name="getUserItemResponse">
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="updateItem">
-      <soap:operation soapAction="urn:UpdateItem" style="document" />
-      <wsdl:input name="updateItem">
+    <wsdl:operation name="getUserItems">
+      <soap:operation soapAction="urn:GetUserItems" style="document" />
+      <wsdl:input name="getUserItems">
         <soap:body use="literal" />
       </wsdl:input>
-      <wsdl:output name="updateItemResponse">
+      <wsdl:output name="getUserItemsResponse">
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="changePassword">
-      <soap:operation soapAction="urn:ChangePassword" style="document" />
-      <wsdl:input name="changePassword">
+    <wsdl:operation name="unlockAllUsers">
+      <soap:operation soapAction="urn:UnlockAllUsers" style="document" />
+      <wsdl:input name="unlockAllUsers">
         <soap:body use="literal" />
       </wsdl:input>
-      <wsdl:output name="changePasswordResponse">
+      <wsdl:output name="unlockAllUsersResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getItem">
+      <soap:operation soapAction="urn:GetItem" style="document" />
+      <wsdl:input name="getItem">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getItemResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAliveTockens">
+      <soap:operation soapAction="urn:GetAliveTockens" style="document" />
+      <wsdl:input name="getAliveTockens">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getAliveTockensResponse">
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
@@ -260,21 +389,21 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="getLockedAdmins">
+      <soap:operation soapAction="urn:GetLockedAdmins" style="document" />
+      <wsdl:input name="getLockedAdmins">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getLockedAdminsResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="addItem">
       <soap:operation soapAction="urn:AddItem" style="document" />
       <wsdl:input name="addItem">
         <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output name="addItemResponse">
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="deleteItem">
-      <soap:operation soapAction="urn:DeleteItem" style="document" />
-      <wsdl:input name="deleteItem">
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output name="deleteItemResponse">
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
@@ -287,12 +416,12 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="createUser">
-      <soap:operation soapAction="urn:CreateUser" style="document" />
-      <wsdl:input name="createUser">
+    <wsdl:operation name="getAllAdmins">
+      <soap:operation soapAction="urn:GetAllAdmins" style="document" />
+      <wsdl:input name="getAllAdmins">
         <soap:body use="literal" />
       </wsdl:input>
-      <wsdl:output name="createUserResponse">
+      <wsdl:output name="getAllAdminsResponse">
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
@@ -323,12 +452,111 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="unlockUsers">
-      <soap:operation soapAction="urn:UnlockUsers" style="document" />
-      <wsdl:input name="unlockUsers">
+    <wsdl:operation name="getLoginedUsers">
+      <soap:operation soapAction="urn:GetLoginedUsers" style="document" />
+      <wsdl:input name="getLoginedUsers">
         <soap:body use="literal" />
       </wsdl:input>
-      <wsdl:output name="unlockUsersResponse">
+      <wsdl:output name="getLoginedUsersResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllItemsIndexes">
+      <soap:operation soapAction="urn:GetAllItemsIndexes" style="document" />
+      <wsdl:input name="getAllItemsIndexes">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getAllItemsIndexesResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setTokenLifeTime">
+      <soap:operation soapAction="urn:SetTokenLifeTime" style="document" />
+      <wsdl:input name="setTokenLifeTime">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setTokenLifeTimeResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllUsers">
+      <soap:operation soapAction="urn:GetAllUsers" style="document" />
+      <wsdl:input name="getAllUsers">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getAllUsersResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLoginedAdmins">
+      <soap:operation soapAction="urn:GetLoginedAdmins" style="document" />
+      <wsdl:input name="getLoginedAdmins">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getLoginedAdminsResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateItem">
+      <soap:operation soapAction="urn:UpdateItem" style="document" />
+      <wsdl:input name="updateItem">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="updateItemResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="unlockUser">
+      <soap:operation soapAction="urn:UnlockUser" style="document" />
+      <wsdl:input name="unlockUser">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="unlockUserResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="changePassword">
+      <soap:operation soapAction="urn:ChangePassword" style="document" />
+      <wsdl:input name="changePassword">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="changePasswordResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteItem">
+      <soap:operation soapAction="urn:DeleteItem" style="document" />
+      <wsdl:input name="deleteItem">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="deleteItemResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLockedUsers">
+      <soap:operation soapAction="urn:GetLockedUsers" style="document" />
+      <wsdl:input name="getLockedUsers">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getLockedUsersResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createUser">
+      <soap:operation soapAction="urn:CreateUser" style="document" />
+      <wsdl:input name="createUser">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="createUserResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="resetServiceToInitialState">
+      <soap:operation soapAction="urn:ResetServiceToInitialState" style="document" />
+      <wsdl:input name="resetServiceToInitialState">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="resetServiceToInitialStateResponse">
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>

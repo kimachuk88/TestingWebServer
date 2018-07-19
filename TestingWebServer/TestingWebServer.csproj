@@ -83,6 +83,15 @@
     <None Include="Connected Services\ServiceReference\TestingWebServer.ServiceReference.deleteItemResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\ServiceReference\TestingWebServer.ServiceReference.getAliveTockensResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference\TestingWebServer.ServiceReference.getAllAdminsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference\TestingWebServer.ServiceReference.getAllItemsIndexesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\ServiceReference\TestingWebServer.ServiceReference.getAllItemsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -92,7 +101,28 @@
     <None Include="Connected Services\ServiceReference\TestingWebServer.ServiceReference.getCoolDownTimeResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\ServiceReference\TestingWebServer.ServiceReference.getItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference\TestingWebServer.ServiceReference.getLockedAdminsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference\TestingWebServer.ServiceReference.getLockedUsersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference\TestingWebServer.ServiceReference.getLoginedAdminsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference\TestingWebServer.ServiceReference.getLoginedUsersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\ServiceReference\TestingWebServer.ServiceReference.getTokenLifeTimeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference\TestingWebServer.ServiceReference.getUserItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference\TestingWebServer.ServiceReference.getUserItemsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServiceReference\TestingWebServer.ServiceReference.getUserNameResponse.datasource">
@@ -110,13 +140,19 @@
     <None Include="Connected Services\ServiceReference\TestingWebServer.ServiceReference.removeUserResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\ServiceReference\TestingWebServer.ServiceReference.resetServiceToInitialStateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\ServiceReference\TestingWebServer.ServiceReference.setCoolDownTimeResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServiceReference\TestingWebServer.ServiceReference.setTokenLifeTimeResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference\TestingWebServer.ServiceReference.unlockUsersResponse.datasource">
+    <None Include="Connected Services\ServiceReference\TestingWebServer.ServiceReference.unlockAllUsersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference\TestingWebServer.ServiceReference.unlockUserResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServiceReference\TestingWebServer.ServiceReference.updateItemResponse.datasource">

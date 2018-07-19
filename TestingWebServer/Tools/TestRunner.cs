@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NUnit.Framework;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,10 @@ namespace TestingWebServer.Tools
     {
         ServiceReference.CommonClient common = new ServiceReference.CommonClient();
         string token;
-
+        public void Reset()
+        {
+            common.resetServiceToInitialState();
+        }
         public string Login(string name, string password)
         {
             token = common.login(name, password);
@@ -41,5 +45,6 @@ namespace TestingWebServer.Tools
         {
             return common.removeUser(token, username);
         }
+        
     }
 }

@@ -8,14 +8,34 @@
   <xs:element name="createUserResponse" type="tns:createUserResponse" />
   <xs:element name="deleteItem" type="tns:deleteItem" />
   <xs:element name="deleteItemResponse" type="tns:deleteItemResponse" />
+  <xs:element name="getAliveTockens" type="tns:getAliveTockens" />
+  <xs:element name="getAliveTockensResponse" type="tns:getAliveTockensResponse" />
+  <xs:element name="getAllAdmins" type="tns:getAllAdmins" />
+  <xs:element name="getAllAdminsResponse" type="tns:getAllAdminsResponse" />
   <xs:element name="getAllItems" type="tns:getAllItems" />
+  <xs:element name="getAllItemsIndexes" type="tns:getAllItemsIndexes" />
+  <xs:element name="getAllItemsIndexesResponse" type="tns:getAllItemsIndexesResponse" />
   <xs:element name="getAllItemsResponse" type="tns:getAllItemsResponse" />
   <xs:element name="getAllUsers" type="tns:getAllUsers" />
   <xs:element name="getAllUsersResponse" type="tns:getAllUsersResponse" />
   <xs:element name="getCoolDownTime" type="tns:getCoolDownTime" />
   <xs:element name="getCoolDownTimeResponse" type="tns:getCoolDownTimeResponse" />
+  <xs:element name="getItem" type="tns:getItem" />
+  <xs:element name="getItemResponse" type="tns:getItemResponse" />
+  <xs:element name="getLockedAdmins" type="tns:getLockedAdmins" />
+  <xs:element name="getLockedAdminsResponse" type="tns:getLockedAdminsResponse" />
+  <xs:element name="getLockedUsers" type="tns:getLockedUsers" />
+  <xs:element name="getLockedUsersResponse" type="tns:getLockedUsersResponse" />
+  <xs:element name="getLoginedAdmins" type="tns:getLoginedAdmins" />
+  <xs:element name="getLoginedAdminsResponse" type="tns:getLoginedAdminsResponse" />
+  <xs:element name="getLoginedUsers" type="tns:getLoginedUsers" />
+  <xs:element name="getLoginedUsersResponse" type="tns:getLoginedUsersResponse" />
   <xs:element name="getTokenLifeTime" type="tns:getTokenLifeTime" />
   <xs:element name="getTokenLifeTimeResponse" type="tns:getTokenLifeTimeResponse" />
+  <xs:element name="getUserItem" type="tns:getUserItem" />
+  <xs:element name="getUserItemResponse" type="tns:getUserItemResponse" />
+  <xs:element name="getUserItems" type="tns:getUserItems" />
+  <xs:element name="getUserItemsResponse" type="tns:getUserItemsResponse" />
   <xs:element name="getUserName" type="tns:getUserName" />
   <xs:element name="getUserNameResponse" type="tns:getUserNameResponse" />
   <xs:element name="lockUser" type="tns:lockUser" />
@@ -26,12 +46,16 @@
   <xs:element name="logoutResponse" type="tns:logoutResponse" />
   <xs:element name="removeUser" type="tns:removeUser" />
   <xs:element name="removeUserResponse" type="tns:removeUserResponse" />
+  <xs:element name="resetServiceToInitialState" type="tns:resetServiceToInitialState" />
+  <xs:element name="resetServiceToInitialStateResponse" type="tns:resetServiceToInitialStateResponse" />
   <xs:element name="setCoolDownTime" type="tns:setCoolDownTime" />
   <xs:element name="setCoolDownTimeResponse" type="tns:setCoolDownTimeResponse" />
   <xs:element name="setTokenLifeTime" type="tns:setTokenLifeTime" />
   <xs:element name="setTokenLifeTimeResponse" type="tns:setTokenLifeTimeResponse" />
-  <xs:element name="unlockUsers" type="tns:unlockUsers" />
-  <xs:element name="unlockUsersResponse" type="tns:unlockUsersResponse" />
+  <xs:element name="unlockAllUsers" type="tns:unlockAllUsers" />
+  <xs:element name="unlockAllUsersResponse" type="tns:unlockAllUsersResponse" />
+  <xs:element name="unlockUser" type="tns:unlockUser" />
+  <xs:element name="unlockUserResponse" type="tns:unlockUserResponse" />
   <xs:element name="updateItem" type="tns:updateItem" />
   <xs:element name="updateItemResponse" type="tns:updateItemResponse" />
   <xs:complexType name="setCoolDownTime">
@@ -43,27 +67,6 @@
   <xs:complexType name="setCoolDownTimeResponse">
     <xs:sequence>
       <xs:element name="return" type="xs:boolean" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="setTokenLifeTime">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="arg0" type="xs:string" />
-      <xs:element minOccurs="0" name="arg1" type="xs:long" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="setTokenLifeTimeResponse">
-    <xs:sequence>
-      <xs:element name="return" type="xs:boolean" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="getAllUsers">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="arg0" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="getAllUsersResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="getAllItems">
@@ -84,26 +87,56 @@
       <xs:element minOccurs="0" name="return" type="xs:long" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="updateItem">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="arg0" type="xs:string" />
-      <xs:element name="arg1" type="xs:int" />
-      <xs:element minOccurs="0" name="arg2" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="updateItemResponse">
-    <xs:sequence>
-      <xs:element name="return" type="xs:boolean" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="changePassword">
+  <xs:complexType name="getUserItem">
     <xs:sequence>
       <xs:element minOccurs="0" name="arg0" type="xs:string" />
       <xs:element minOccurs="0" name="arg1" type="xs:string" />
-      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element name="arg2" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="changePasswordResponse">
+  <xs:complexType name="getUserItemResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getUserItems">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getUserItemsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getAliveTockens">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getAliveTockensResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element name="arg1" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getItemResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="unlockAllUsers">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="unlockAllUsersResponse">
     <xs:sequence>
       <xs:element name="return" type="xs:boolean" />
     </xs:sequence>
@@ -130,24 +163,24 @@
       <xs:element name="return" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="getLockedAdmins">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getLockedAdminsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="addItem">
     <xs:sequence>
       <xs:element minOccurs="0" name="arg0" type="xs:string" />
       <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element name="arg2" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="addItemResponse">
-    <xs:sequence>
-      <xs:element name="return" type="xs:boolean" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="deleteItem">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="arg0" type="xs:string" />
-      <xs:element name="arg1" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="deleteItemResponse">
     <xs:sequence>
       <xs:element name="return" type="xs:boolean" />
     </xs:sequence>
@@ -163,17 +196,14 @@
       <xs:element name="return" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="createUser">
+  <xs:complexType name="getAllAdmins">
     <xs:sequence>
       <xs:element minOccurs="0" name="arg0" type="xs:string" />
-      <xs:element minOccurs="0" name="arg1" type="xs:string" />
-      <xs:element minOccurs="0" name="arg2" type="xs:string" />
-      <xs:element name="arg3" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="createUserResponse">
+  <xs:complexType name="getAllAdminsResponse">
     <xs:sequence>
-      <xs:element name="return" type="xs:boolean" />
+      <xs:element minOccurs="0" name="return" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="lockUser">
@@ -205,12 +235,130 @@
       <xs:element minOccurs="0" name="return" type="xs:long" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="unlockUsers">
+  <xs:complexType name="getLoginedUsers">
     <xs:sequence>
       <xs:element minOccurs="0" name="arg0" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="unlockUsersResponse">
+  <xs:complexType name="getLoginedUsersResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getAllItemsIndexes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getAllItemsIndexesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setTokenLifeTime">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setTokenLifeTimeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getAllUsers">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getAllUsersResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getLoginedAdmins">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getLoginedAdminsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element name="arg1" type="xs:int" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateItemResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="unlockUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="unlockUserResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="changePassword">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="changePasswordResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element name="arg1" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteItemResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getLockedUsers">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getLockedUsersResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element name="arg3" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createUserResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="resetServiceToInitialState">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="resetServiceToInitialStateResponse">
     <xs:sequence>
       <xs:element name="return" type="xs:boolean" />
     </xs:sequence>

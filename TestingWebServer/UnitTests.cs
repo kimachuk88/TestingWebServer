@@ -55,6 +55,9 @@ namespace TestingWebServer
             //Logout from admin account and verify that action being done
             Assert.IsTrue(Logout(name, token),"Unable to logout from admin");
 
+            //Reset to initial state
+            Reset();
+
         }
 
         [Test]
@@ -66,6 +69,9 @@ namespace TestingWebServer
 
             //Verify impossibility of creation account without name and password
             Assert.IsFalse(Create(token,"", ""), "New user with empty name and password created");
+
+            //Reset to initial state
+            Reset();
 
         }
         
@@ -79,6 +85,9 @@ namespace TestingWebServer
             //Verify impossibility of creation user with same name as existing
             Assert.IsFalse(Create(token, "akimatc", "1234"), "User with existing name created");
 
+            //Reset to initial state
+            Reset();
+
         }
 
         [Test]
@@ -90,6 +99,9 @@ namespace TestingWebServer
 
             //Verify impossibility of creation user with admin name 
             Assert.IsFalse(Create(token, "admin", "1234"), "User with admin name created");
+
+            //Reset to initial state
+            Reset();
         }
     }
 }
