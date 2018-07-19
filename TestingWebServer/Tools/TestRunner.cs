@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestingWebServer.Tools
 {
-    class TestRunner
+    public class TestRunner
     {
         ServiceReference.CommonClient common = new ServiceReference.CommonClient();
         string token;
@@ -20,7 +20,6 @@ namespace TestingWebServer.Tools
         public bool Create(string token, string name, string password)
         {
             return common.createUser(token, name, password, true);
-
         }
 
         public bool Logout(string name, string token)
